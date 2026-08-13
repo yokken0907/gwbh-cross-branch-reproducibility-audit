@@ -1,0 +1,16 @@
+{
+  "repository": "GWBH_REPRODUCIBILITY_REPOSITORY",
+  "version": "1.0.0",
+  "design": "MINIMUM_COMPLETE_FINAL_RESULT_REPRODUCTION",
+  "hashed_payload_file_count": 335,
+  "integrity_metadata_file_count": 4,
+  "total_repository_file_count": 339,
+  "release_asset_zip_count": 2,
+  "release_asset_sidecar_count": 2,
+  "release_asset_total_zip_bytes": 494269058,
+  "project_master_sha256": "87247fb2a664c127570008586cf17110f60e9dc4544899291bca70afa8e1d1f2",
+  "b08_compact_sha256": "2bdcfeae243a6eec84a6b87b64faa35ce22fbe38a2a189ebc02b97d7337fe8f9",
+  "b08_reproduction_module": "SELF_CONTAINED_A01_A02_EXECUTABLE",
+  "historical_all_run_archives_required": false,
+  "scientific_closure": "FINAL_PROJECT_SCIENTIFIC_CLOSED_EIGHT_BRANCH_DEPENDENCY_ATLAS_COMPLETE_NO_CROSS_BRANCH_NUMERIC_PROPAGATION"
+}

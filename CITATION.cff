@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "GWBH Reproducibility Repository"
+message: "Please cite this repository by title, author, version, and persistent release identifier when available."
+type: dataset
+authors:
+  - family-names: Yoshimura
+    given-names: Keiji
+    email: keiji.yoshimura.research@gmail.com
+version: 1.0.0
+preferred-citation:
+  type: dataset
+  authors:
+    - family-names: Yoshimura
+      given-names: Keiji
+  title: "GWBH Reproducibility Repository"
+  version: 1.0.0

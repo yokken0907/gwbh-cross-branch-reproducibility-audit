@@ -1,0 +1,15 @@
+{
+  "A01": {
+    "filename": "GWBHXBICA_MASTER_REFERENCE_PACKAGE_v1.0.0_FINAL_PROJECT_CLOSURE.zip",
+    "size_bytes": 232729672,
+    "sha256": "87247fb2a664c127570008586cf17110f60e9dc4544899291bca70afa8e1d1f2",
+    "role": "Canonical integrated Project Master; supplies the B08 canonical lineage, small GW170817 artifacts, and final expected closure tables."
+  },
+  "A02": {
+    "filename": "GWBH_B08_COMPACT_REPRODUCTION_PAYLOADS_v1.0.0.zip",
+    "size_bytes": 261539386,
+    "sha256": "2bdcfeae243a6eec84a6b87b64faa35ce22fbe38a2a189ebc02b97d7337fe8f9",
+    "role": "Compact byte-identical storage of the 21 B08 large posterior JSON payloads."
+  },
+  "outputs": "User-selected --output-dir; no absolute user path is assumed."
+}
