@@ -1,0 +1,11 @@
+{
+  "source_role": "OFFICIAL_O4B_SOURCE_CLASS_FRAME",
+  "publisher": "LIGO Scientific Collaboration / Virgo / KAGRA public science summary",
+  "url": "https://ligo.org/science-summaries/o4b_catalog_omnibus/",
+  "retrieved_date": "2026-08-12",
+  "retrieval_stage": "BEFORE_FORMAL_PHASE3_O4B_SUMMARY_VALUE_ACCESS",
+  "primary_source_verified": true,
+  "short_source_excerpt": "there were no new events involving neutron stars during O4b.",
+  "interpretation_for_this_audit": "The O4b PE-summary event frame is treated as BBH-compatible for this adapted replication screen; no event-specific astrophysical classification is inferred beyond this categorical source statement.",
+  "network_fetch_required_during_user_run": false
+}

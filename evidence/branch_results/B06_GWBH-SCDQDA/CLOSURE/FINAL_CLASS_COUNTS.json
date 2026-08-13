@@ -1,0 +1,14 @@
+{
+  "candidate_detector_windows": 40,
+  "bounded_identities": 23,
+  "counts": {
+    "STABLE": 0,
+    "STRAIN_PRODUCT_SENSITIVE": 0,
+    "DQ_SENSITIVE": 0,
+    "CALIBRATION_LIMITED": 5,
+    "PUBLIC_REPRESENTATION_SPECIFIC": 35,
+    "UNRESOLVED": 0
+  },
+  "note": "STRAIN_PRODUCT_SENSITIVE=0 means confirmatory materiality classification was disabled by the preregistered omission of a numerical materiality threshold; it does not mean all public strain products are numerically identical.",
+  "STABLE_class_note": "STABLE=0 because the more specific PUBLIC_REPRESENTATION_SPECIFIC or CALIBRATION_LIMITED class applies to every bounded candidate-detector window. Robustness classification stability is separately STABLE for all 40 rows."
+}

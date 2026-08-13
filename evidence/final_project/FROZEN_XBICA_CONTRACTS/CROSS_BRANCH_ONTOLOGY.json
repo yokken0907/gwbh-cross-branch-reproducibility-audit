@@ -1,0 +1,57 @@
+{
+  "project": "GWBH-XBICA",
+  "version": "v0.2.0",
+  "layer_order": [
+    {
+      "layer": "L0",
+      "branch": "B06",
+      "label": "Public strain / DQ / calibration"
+    },
+    {
+      "layer": "L1",
+      "branch": "B05",
+      "label": "Candidate / detection / catalog surface"
+    },
+    {
+      "layer": "L2",
+      "branch": "B01",
+      "label": "Event-level PE / analysis-chain dependence"
+    },
+    {
+      "layer": "L3",
+      "branch": "B02",
+      "label": "Population inference"
+    },
+    {
+      "layer": "L4",
+      "branch": "B03",
+      "label": "Selection / injection"
+    },
+    {
+      "layer": "L5",
+      "branch": "B04",
+      "label": "Remnant / ringdown"
+    },
+    {
+      "layer": "L6",
+      "branch": "B07",
+      "label": "Independent-release transport / replication"
+    },
+    {
+      "layer": "L7",
+      "branch": "B08",
+      "label": "Standard-siren cosmology output"
+    }
+  ],
+  "branch_closure_locks": {
+    "B01": "PASS_GWBHPIA_FIRST_BRANCH_SCIENTIFIC_CLOSURE",
+    "B02": "MASTER_PACKAGE_COMPLETE_SECOND_BRANCH_CLOSED",
+    "B03": "NO_GO_PUBLIC_ASSETS_INSUFFICIENT",
+    "B04": "HOLD_PRIMARY_SCHEMA_UNRESOLVED",
+    "B05": "FINAL_CLOSED",
+    "B06": "FINAL_CLOSED",
+    "B07": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+    "B08": "FINAL_SCIENTIFIC_CLOSED_PUBLIC_OUTPUT_DEPENDENCY_AUDIT_COMPLETE_PARTIAL_PRIMARY_10_OF_12"
+  },
+  "interpretive_principle": "Structural adjacency is not numerical propagation; numerical difference is not causal attribution."
+}

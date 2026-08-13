@@ -1,0 +1,44 @@
+{
+  "claims": [
+    {
+      "id": "F01",
+      "claim": "Do not claim that any public strain-product difference changed candidate significance, FAR, p_astro, detection truth, or catalog inclusion."
+    },
+    {
+      "id": "F02",
+      "claim": "Do not claim confirmatory STRAIN_PRODUCT_SENSITIVE cases; Phase3 did not freeze a numerical materiality threshold."
+    },
+    {
+      "id": "F03",
+      "claim": "Do not equate CBC DQ PASS/FAIL with true detection, false detection, or absence/presence of noise."
+    },
+    {
+      "id": "F04",
+      "claim": "Do not claim parameter-estimation, mass/spin/distance/skymap, population, VT/pdet, or ringdown parameter shifts from these results."
+    },
+    {
+      "id": "F05",
+      "claim": "Do not treat calibration envelopes as deterministic corrections or propagate them as measured PE biases."
+    },
+    {
+      "id": "F06",
+      "claim": "Do not treat GDS-GATED_STRAIN_AR as an LVK production-analysis input or proxy."
+    },
+    {
+      "id": "F07",
+      "claim": "Do not claim the audited public CLEAN/alternate representations are byte-identical to the exact production-search inputs."
+    },
+    {
+      "id": "F08",
+      "claim": "Do not generalize the 23-identity / 40-window strain metrics to all O4a candidates as an event-population frequency statement."
+    },
+    {
+      "id": "F09",
+      "claim": "Do not include O4b/GWTC-5 evidence in this branch."
+    },
+    {
+      "id": "F10",
+      "claim": "Do not retroactively repair the unresolved 4k/16k or target-time DQ-bitmask robustness checks inside this closed branch."
+    }
+  ]
+}

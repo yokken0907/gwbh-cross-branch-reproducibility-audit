@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "decision": "GO_PHASE8_MASTER_PACKAGING",
+  "version": "v0.8.0",
+  "scientific_closure_state": "FINAL_SCIENTIFIC_CLOSED_PUBLIC_OUTPUT_DEPENDENCY_AUDIT_COMPLETE_PARTIAL_PRIMARY_10_OF_12",
+  "scientific_work_complete": true,
+  "canonical_report": "outputs/PHASE7_FINAL_REPORT.json",
+  "independent_review": "outputs/INDEPENDENT_REVIEW.json"
+}

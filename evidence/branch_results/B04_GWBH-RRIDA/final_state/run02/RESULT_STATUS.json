@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "decision": "CONFIG_STRUCTURE_CAPTURED",
+  "phase": 6,
+  "run": 2,
+  "version": "0.7.1",
+  "canonical_report": "outputs/PHASE6_RUN02_REPORT.json",
+  "contract_sha256": "999385ea235041e21be0b7394f65716a16672726f0e431c6afcbf3390faba899",
+  "config_structures_captured": 44,
+  "run01_correction_count": 22,
+  "p02_values_interpreted": 0,
+  "m01_computed": 0,
+  "phase6_run03_started": 0,
+  "phase7_started": 0
+}

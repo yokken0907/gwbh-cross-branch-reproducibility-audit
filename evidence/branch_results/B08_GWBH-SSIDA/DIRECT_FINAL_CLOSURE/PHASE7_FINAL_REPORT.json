@@ -1,0 +1,28 @@
+{
+  "project_id": "GWBH-SSIDA",
+  "phase": 7,
+  "run": 1,
+  "version": "v0.8.0",
+  "status": "COMPLETE_STOPPED",
+  "decision": "GO_PHASE8_MASTER_PACKAGING",
+  "scientific_closure_state": "FINAL_SCIENTIFIC_CLOSED_PUBLIC_OUTPUT_DEPENDENCY_AUDIT_COMPLETE_PARTIAL_PRIMARY_10_OF_12",
+  "criteria": {
+    "P7_01_PHASE6_CANONICAL": true,
+    "P7_02_P01_P06_COMPLETE": true,
+    "P7_03_PRIMARY_10_OF_12_PRESERVED": true,
+    "P7_04_SECONDARY_AND_POSTHOC_SEPARATED": true,
+    "P7_05_CROSS_BRANCH_NUMERIC_ZERO": true,
+    "P7_06_NO_NEW_SCIENCE": true,
+    "P7_07_CLAIM_BOUNDARIES_COMPLETE": true,
+    "P7_08_UNRESOLVED_REGISTER_COMPLETE": true,
+    "P7_09_INDEPENDENT_REVIEW_PASS": true,
+    "P7_10_PHASE8_NOT_AUTOSTARTED": true
+  },
+  "canonical_synthesis": "outputs/SCIENTIFIC_SYNTHESIS_REPORT.json",
+  "final_closure": "outputs/FINAL_SCIENTIFIC_CLOSURE.md",
+  "allowed_claims": "outputs/ALLOWED_CLAIMS.json",
+  "forbidden_claims": "outputs/FORBIDDEN_CLAIMS.json",
+  "unresolved_register": "outputs/FINAL_UNRESOLVED_REGISTER.json",
+  "scientific_work_complete": true,
+  "next_phase_scope": "Deterministic Phase8 Master packaging only."
+}

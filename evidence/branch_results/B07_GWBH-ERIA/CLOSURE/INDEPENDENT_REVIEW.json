@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "main_decision": "GO_PHASE5_MASTER_PACKAGING",
+  "closure_state": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+  "decision_recomputed": "GO_PHASE5_MASTER_PACKAGING",
+  "issues": [],
+  "strict_track": "STRICT_EXTERNAL_REPLICATION_NOT_EXECUTED_SCHEMA_NO_GO",
+  "adapted_track": "ADAPTED_COMMON5_REPLICATION_NOT_EXECUTED_INSUFFICIENT_COMPLETE_FRAME",
+  "replication_test_executed": false,
+  "phase3_funnel": {
+    "summary_unique_events": 104,
+    "o4b_date_compatible": 104,
+    "official_bbh_compatible": 104,
+    "strict_three_models": 60,
+    "under_250MB_cap": 42,
+    "o4b_three_models_under_cap": 22,
+    "common5_all_models_finite": 0,
+    "fully_eligible": 0
+  },
+  "allowed_claim_count": 6,
+  "forbidden_claim_count": 6,
+  "unresolved_item_count": 3,
+  "forbidden_access": {
+    "network_requests": 0,
+    "summary_hdf5_opens": 0,
+    "summary_row_values_read": 0,
+    "predictor_computations": 0,
+    "cohort_selections": 0,
+    "event_posterior_downloads": 0,
+    "event_posterior_hdf5_opens": 0,
+    "posterior_dataset_accesses": 0,
+    "branch1_common5_bridge_computations": 0,
+    "correlation_or_pvalue_computations": 0,
+    "parameter_reductions": 0,
+    "model_substitutions": 0,
+    "phase5_auto_started": false
+  }
+}

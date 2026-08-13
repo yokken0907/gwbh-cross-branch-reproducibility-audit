@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "critical_count": 29,
+  "nonterminal_count": 0,
+  "nonterminal_source_ids": [],
+  "frozen_snapshot": "v1.0.7",
+  "network_refetch_performed": false
+}

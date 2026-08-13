@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "main_decision": "GO_PHASE6_DEPENDENCY_METRICS_BOUNDED_23",
+  "issues": [],
+  "request_rows": 40,
+  "successful_channel_payloads": 160,
+  "byte_index_rows": 160,
+  "payload_hashes_checked": 160,
+  "withheld_identity_accesses": 0,
+  "forbidden_access": {
+    "default_gwosc_strain_fetches": 0,
+    "o4b_strain_fetches": 0,
+    "gwtc5_candidate_accesses": 0,
+    "event_detail_page_accesses": 0,
+    "search_reruns": 0,
+    "pe_reruns": 0,
+    "replacement_candidates_added": 0,
+    "phase6_auto_started": false
+  }
+}

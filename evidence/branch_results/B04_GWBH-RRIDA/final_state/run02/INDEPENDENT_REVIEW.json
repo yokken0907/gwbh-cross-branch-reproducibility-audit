@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "issues": [],
+  "structure_rows_recounted": 44,
+  "captured_endpoints_recounted": 44,
+  "declarations_recounted": 2420,
+  "target_rows_recounted": 88,
+  "pair_rows_recounted": 22,
+  "correction_rows_recounted": 22,
+  "config_equality_adjudications": 0,
+  "confirmatory_metrics_recomputed": 0,
+  "phase6_run03_started": 0,
+  "phase7_started": 0
+}

@@ -1,0 +1,25 @@
+branch,route,relation_class,direct_method_dependency,branch_numeric_propagation,rationale
+01,SPECTRAL_SIREN,PARTIAL,YES,NONE,"GW cosmology uses event-level PE outputs including luminosity distance and masses, but Branch01 numerical dependence results are not propagated into GWTC-5 H0 and Branch07 shows strict cross-release replication was not executable."
+01,DES_DARK_SIREN,PARTIAL,YES,NONE,Dark-siren cosmology still uses GW event PE/skymap-distance information; Branch01 audited BBH PE dependence but its numerical results are not transported into the GWTC-5 cosmology posterior.
+01,GLADE_DARK_SIREN,PARTIAL,YES,NONE,Same PE-layer structural dependence as DES dark sirens; no Branch01-to-H0 numerical propagation is performed.
+01,GW170817_BRIGHT_ONLY,NONE,NO,NONE,Branch01 is a BBH PE audit and does not audit the BNS bright-siren GW170817 endpoint.
+01,FINAL_SPECTRAL_PLUS_BRIGHT,PARTIAL,YES,NONE,"The final spectral combination inherits the GW-event PE layer, but no Branch01 numerical metric is propagated."
+01,FINAL_DARK_PLUS_BRIGHT,PARTIAL,YES,NONE,"The final dark combination inherits the GW-event PE layer, but no Branch01 numerical metric is propagated."
+02,SPECTRAL_SIREN,DIRECT,YES,NONE,"Spectral-siren H0 inference explicitly depends on the population/mass-spectrum model. SSIDA Phase4/5 directly compares FullPop, BPL3P and MLTP public cosmology outputs. Branch02 numerical population results are nevertheless not reused."
+02,DES_DARK_SIREN,DIRECT,YES,NONE,The dark-siren public outputs are conditioned on population models; SSIDA compares FullPop/BPL3P/MLTP DES outputs. No Branch02 numerical propagation is performed.
+02,GLADE_DARK_SIREN,DIRECT,YES,NONE,The GLADE+ dark-siren public outputs are population-model conditioned; SSIDA compares model variants without importing Branch02 numerical results.
+02,GW170817_BRIGHT_ONLY,NONE,NO,NONE,The bright-only GW170817 endpoint is not the BBH population-inference target audited in Branch02.
+02,FINAL_SPECTRAL_PLUS_BRIGHT,DIRECT,YES,NONE,The spectral component of the final posterior is directly population-model dependent; Branch02 numerical results remain non-propagated.
+02,FINAL_DARK_PLUS_BRIGHT,DIRECT,YES,NONE,The dark component of the final posterior is population-model conditioned; Branch02 numerical results remain non-propagated.
+05,SPECTRAL_SIREN,PARTIAL,YES,NONE,"Candidate/catalog inclusion and event-frame construction are upstream of the 235-dark-siren/236-source cosmology frame, but Branch05 audited O4a catalog revision rather than the exact GWTC-5 cosmology frame."
+05,DES_DARK_SIREN,PARTIAL,YES,NONE,Event inclusion/catalog lineage is upstream of the dark-siren source set; Branch05 does not numerically propagate candidate transitions into H0.
+05,GLADE_DARK_SIREN,PARTIAL,YES,NONE,Event inclusion/catalog lineage is upstream of the dark-siren source set; Branch05 does not numerically propagate candidate transitions into H0.
+05,GW170817_BRIGHT_ONLY,NONE,NO,NONE,Branch05 is a BBH O4a detection/catalog-inclusion audit and does not define the GW170817 bright-siren endpoint.
+05,FINAL_SPECTRAL_PLUS_BRIGHT,PARTIAL,YES,NONE,"The dark/spectral event frame is structurally downstream of catalog selection, but no Branch05 candidate-level numerical effect is propagated into the final H0 posterior."
+05,FINAL_DARK_PLUS_BRIGHT,PARTIAL,YES,NONE,"The dark/spectral event frame is structurally downstream of catalog selection, but no Branch05 candidate-level numerical effect is propagated into the final H0 posterior."
+07,SPECTRAL_SIREN,STRUCTURAL_ONLY,NO,NONE,Branch07 establishes a public-release transportability boundary for PE external replication; it is not an input to the H0 likelihood and supplies no replicated O4b PE dependence statistic.
+07,DES_DARK_SIREN,STRUCTURAL_ONLY,NO,NONE,Branch07 constrains reproducibility/transport claims across releases but does not numerically enter the DES dark-siren posterior.
+07,GLADE_DARK_SIREN,STRUCTURAL_ONLY,NO,NONE,Branch07 constrains reproducibility/transport claims across releases but does not numerically enter the GLADE+ dark-siren posterior.
+07,GW170817_BRIGHT_ONLY,NONE,NO,NONE,Branch07 is an O4b BBH external-release replication audit and is unrelated to the BNS bright-only endpoint.
+07,FINAL_SPECTRAL_PLUS_BRIGHT,STRUCTURAL_ONLY,NO,NONE,Branch07 limits how strongly cross-release PE reproducibility may be claimed for the BBH component; no Branch07 statistic enters the combined posterior.
+07,FINAL_DARK_PLUS_BRIGHT,STRUCTURAL_ONLY,NO,NONE,Branch07 limits how strongly cross-release PE reproducibility may be claimed for the BBH component; no Branch07 statistic enters the combined posterior.

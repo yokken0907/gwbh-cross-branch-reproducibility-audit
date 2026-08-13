@@ -1,0 +1,9 @@
+parameter,role
+chirp_mass,detector-frame mass scale
+chirp_mass_source,source-frame mass scale
+mass_ratio,component-mass asymmetry
+chi_eff,effective aligned spin
+chi_p,effective precession
+luminosity_distance,distance inference
+final_mass_source,derived remnant mass
+final_spin,derived remnant spin

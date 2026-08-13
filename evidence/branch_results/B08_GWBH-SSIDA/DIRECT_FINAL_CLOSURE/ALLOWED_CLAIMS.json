@@ -1,0 +1,42 @@
+[
+  {
+    "id": "A01",
+    "claim": "The frozen GWTC-5 public H0 outputs exhibit measurable posterior differences across several published analysis choices, including pipeline, galaxy catalog, weighting, population model and event-selection/IFAR variants.",
+    "basis": "Phase4 C01-C10 and Phase5 robustness outputs."
+  },
+  {
+    "id": "A02",
+    "claim": "Within the audited FullPop validation comparisons, the IFAR variants produced larger descriptive posterior shifts/distances than the other frozen primary/robustness comparisons highlighted here.",
+    "basis": "C08, C09 and R17: delta medians about -8 to -9 km s^-1 Mpc^-1 and normalized W1 about 0.52-0.56. No materiality threshold was defined."
+  },
+  {
+    "id": "A03",
+    "claim": "Catalog, pipeline, weighting and population-model choices also produce non-zero public-output dependence, with magnitude varying by model/route.",
+    "basis": "Phase4 primary and Phase5 cross-model matrix; descriptive only."
+  },
+  {
+    "id": "A04",
+    "claim": "The final spectral+GW170817 and dark+GW170817 public posterior samples are not identical; the frozen C10 comparison is a valid descriptive output comparison.",
+    "basis": "C10 PASS."
+  },
+  {
+    "id": "A05",
+    "claim": "The preregistered Phase4 primary result is partial: 10 of 12 comparisons are valid and C11/C12 are public-output-limited because the bright-only artifact is grid+density rather than direct samples.",
+    "basis": "Phase4 RUN02 closure."
+  },
+  {
+    "id": "A06",
+    "claim": "The release-documented GW170817 grid-density conversion can be reproduced as a deterministic post-hoc diagnostic, but it does not restore C11/C12 as preregistered primary results.",
+    "basis": "Phase5 D01/D02 and boundary audit."
+  },
+  {
+    "id": "A07",
+    "claim": "Population modeling is a direct methodological dependency of the published standard-siren H0 routes; Branch01/05/07 connect only partially or structurally under the frozen cross-branch map.",
+    "basis": "Phase6 structural map."
+  },
+  {
+    "id": "A08",
+    "claim": "The project can identify public-output dependence and provenance boundaries without determining which H0 value is physically correct.",
+    "basis": "Claim boundary and zero new-cosmology-inference audits."
+  }
+]

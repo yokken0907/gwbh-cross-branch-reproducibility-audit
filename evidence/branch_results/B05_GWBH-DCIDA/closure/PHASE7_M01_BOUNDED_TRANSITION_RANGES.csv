@@ -1,0 +1,6 @@
+transition_class,minimum_count,maximum_count,shared_candidate_denominator,threshold_changed,missing_row_imputed,interpretation
+RETAINED,128,1325,1328,FALSE,FALSE,Logical worst-case range over unresolved coverage only.
+PROMOTED,0,1197,1328,FALSE,FALSE,Logical worst-case range over unresolved coverage only.
+DEMOTED,0,1187,1328,FALSE,FALSE,Logical worst-case range over unresolved coverage only.
+SURFACE_ONLY,1,1,1328,FALSE,FALSE,Logical worst-case range over unresolved coverage only.
+OUT_OF_SCOPE,1,1188,1328,FALSE,FALSE,Logical worst-case range over unresolved coverage only.
