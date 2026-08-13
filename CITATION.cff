@@ -7,6 +7,8 @@ authors:
     given-names: Keiji
     email: keiji.yoshimura.research@gmail.com
 version: 1.0.0
+date-released: 2026-08-13
+url: https://github.com/yokken0907/gwbh-cross-branch-reproducibility-audit
 preferred-citation:
   type: dataset
   authors:
