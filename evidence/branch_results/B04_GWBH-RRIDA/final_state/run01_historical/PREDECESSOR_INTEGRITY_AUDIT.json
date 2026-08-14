@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "predecessor_sha256": "92fb2da8f9b352bc9de7f8568ceef1f662b0fe068eab4b135b55d50b72200b2a",
+  "predecessor_size_bytes": 793752,
+  "contract_sha256": "999385ea235041e21be0b7394f65716a16672726f0e431c6afcbf3390faba899",
+  "primary_pair_count": 22,
+  "selected_member_count": 88,
+  "chain": {
+    "chain_length": 5,
+    "phase4_sha256": "d63debec5d7accc0ac0033dbe270929dbda20346461370f983a7cc563ca7c532",
+    "phase3_run02_sha256": "8a0266a184da54299de9f1f20aff27aa4a4a4471f8f9026c0a7de908fccfba2f",
+    "phase3_run01_sha256": "6208d27033f99851d8ce33e9ff124b9796fe8890475a6eaa1a3883cc3d14ec14",
+    "phase2_run02_sha256": "e33aa1358c6540bec02959eaed53da6dbca5a2e718c28df1b046bb59ef9d9f82",
+    "phase2_inventory_rows": 692
+  },
+  "phase6_network_access_before_pass": 0
+}

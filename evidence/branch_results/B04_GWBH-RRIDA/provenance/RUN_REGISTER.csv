@@ -1,0 +1,12 @@
+stage,version,status,decision,master_role,note
+PHASE0_RUN01,0.1.0,COMPLETE_STOPPED,GO_PHASE1_LINEAGE_AND_SCHEMA_AUDIT,VALID_PREDECESSOR,Official-source registry and branch boundary established; no numerical inference.
+PHASE1_RUN01,0.2.0,COMPLETE_STOPPED,GO_PHASE2_CLAIM_TO_OUTPUT_MAPPING,VALID_PREDECESSOR,Lineage and schema audit checkpoint authorized Phase 2 mapping only.
+PHASE2_RUN01,0.3.0,COMPLETE_STOPPED,HOLD_PYRING_LARGE_ARCHIVE_MAPPING_DECISION,VALID_PREDECESSOR,Large pyRing archive mapping remained on HOLD pending bounded repair.
+PHASE2_RUN02,0.3.1,COMPLETE_STOPPED,GO_PHASE3_EVENT_COHORT_AND_COMPARABILITY,VALID_PREDECESSOR,Archive inventory and claim-to-output mapping repair authorized Phase 3 only.
+PHASE3_RUN01,0.4.0,COMPLETE_STOPPED,GO_PHASE4_READER_PILOT_AND_SYNTHETIC_NULL_QA,VALID_PREDECESSOR,Initial event-cohort/comparability pass; retained as predecessor to RUN02 correction.
+PHASE3_RUN02,0.4.1,COMPLETE_STOPPED,GO_PHASE4_READER_PILOT_AND_SYNTHETIC_NULL_QA,VALID_PREDECESSOR,Corrected cohort/comparability checkpoint authorized Phase 4 pilot/QA only.
+PHASE4_RUN01,0.5.0,COMPLETE_STOPPED,METRIC_READY,VALID_PREDECESSOR,Reader pilot and synthetic null QA completed; metric became ready but not confirmatory.
+PHASE5_RUN01,0.6.1,COMPLETE_STOPPED,FROZEN,VALID_PREDECESSOR,"P02, 22 pairs, M01, threshold, access policy, and stopping rule frozen before values."
+PHASE6_RUN01,0.7.0,COMPLETE_STOPPED,HOLD_PRIMARY_SCHEMA_UNRESOLVED,DECISION_TRIGGER,"Header gate passed, config gate unresolved, no numerical payload parsed; branch-level HOLD triggered."
+PHASE6_RUN02,0.7.1,COMPLETE_STOPPED,CONFIG_STRUCTURE_CAPTURED,CANONICAL_FINAL_RUN,Bounded config-structure repair captured 44 configs and corrected RUN01 equality records; stopped before data.
+MASTER_CLOSURE,1.0.0,FINAL_CLOSED,HOLD_PRIMARY_SCHEMA_UNRESOLVED,FINAL_BRANCH_AUTHORITY,"Post-RUN02 artifact audit fixed the HOLD, prohibited RUN03/Phase 7, and preserved all run evidence unchanged."

@@ -1,0 +1,113 @@
+{
+  "canonical_root": "GWBHSSIDA_PHASE7_RUN01_v0.8.0_RESULTS_FOR_REVIEW.zip",
+  "entries": [
+    {
+      "depth": -1,
+      "filename": "GWBHSSIDA_PHASE7_RUN01_v0.8.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 5138719,
+      "sha256": "b847984ad30a59143c4ea2792ef9bf7fdb3573628f609afad5446f3927b0dcca"
+    },
+    {
+      "depth": 0,
+      "filename": "GWBHSSIDA_PHASE6_RUN01_v0.7.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 5085686,
+      "sha256": "811d83931df51408bb9bcc40598fd79f3984ef6836b9dd3368ceb045e66babac"
+    },
+    {
+      "depth": 1,
+      "filename": "GWBHSSIDA_PHASE5_RUN01_v0.6.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 5041950,
+      "sha256": "494d03689485a48e878a7e90749d98c755642bc639f4746ad362e3d467780704"
+    },
+    {
+      "depth": 2,
+      "filename": "GWBHSSIDA_PHASE4_RUN02_v0.5.1_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 4897790,
+      "sha256": "07cc6118eb4fe1baed21c8edbe7840b1bcee3a481f4242332a9f4e78f6606b2a"
+    },
+    {
+      "depth": 3,
+      "filename": "GWBHSSIDA_PHASE4_RUN01_v0.5.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 4757353,
+      "sha256": "98371ec4960242d78e21cac481fe2bf8a4e0d686a1da7c75c9d7b8f13c170d72"
+    },
+    {
+      "depth": 4,
+      "filename": "GWBHSSIDA_PHASE3_RUN02_v0.4.1_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 1228198,
+      "sha256": "563f0a29a9878b89933d44920f6389e2ce3ac23317af5bf3efb745b2fb3dbc4d"
+    },
+    {
+      "depth": 5,
+      "filename": "GWBHSSIDA_PHASE2_RUN01_v0.3.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 585995,
+      "sha256": "d9d590c26f07817187bc438fae6b74470e55a655e58cfabe5ca720588da5a536"
+    },
+    {
+      "depth": 6,
+      "filename": "GWBHSSIDA_PHASE1_RUN01_v0.2.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 562078,
+      "sha256": "fe61b3a5a566ec367207b121362b77902844cc57d72da0f70123e3521d25f13a"
+    },
+    {
+      "depth": 7,
+      "filename": "GWBHSSIDA_PHASE0_RUN01_v0.1.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 218095,
+      "sha256": "ef36906c15a651f1b6a335cd7bcb22aa4cd6d00bc78dcf7527a2131f3fd3755a"
+    },
+    {
+      "depth": 5,
+      "filename": "GWBHSSIDA_PHASE3_RUN01_v0.4.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 613081,
+      "sha256": "5dcf6a75a79682d75699934a7ea36e0f6d9dbe26b190249e08c30f4f40bdef35"
+    },
+    {
+      "depth": 6,
+      "filename": "GWBHSSIDA_PHASE2_RUN01_v0.3.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 585995,
+      "sha256": "d9d590c26f07817187bc438fae6b74470e55a655e58cfabe5ca720588da5a536"
+    },
+    {
+      "depth": 7,
+      "filename": "GWBHSSIDA_PHASE1_RUN01_v0.2.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 562078,
+      "sha256": "fe61b3a5a566ec367207b121362b77902844cc57d72da0f70123e3521d25f13a"
+    },
+    {
+      "depth": 8,
+      "filename": "GWBHSSIDA_PHASE0_RUN01_v0.1.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 218095,
+      "sha256": "ef36906c15a651f1b6a335cd7bcb22aa4cd6d00bc78dcf7527a2131f3fd3755a"
+    },
+    {
+      "depth": 4,
+      "filename": "PHASE1.zip",
+      "size_bytes": 562078,
+      "sha256": "fe61b3a5a566ec367207b121362b77902844cc57d72da0f70123e3521d25f13a"
+    },
+    {
+      "depth": 5,
+      "filename": "GWBHSSIDA_PHASE0_RUN01_v0.1.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 218095,
+      "sha256": "ef36906c15a651f1b6a335cd7bcb22aa4cd6d00bc78dcf7527a2131f3fd3755a"
+    },
+    {
+      "depth": 4,
+      "filename": "PHASE2.zip",
+      "size_bytes": 585995,
+      "sha256": "d9d590c26f07817187bc438fae6b74470e55a655e58cfabe5ca720588da5a536"
+    },
+    {
+      "depth": 5,
+      "filename": "GWBHSSIDA_PHASE1_RUN01_v0.2.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 562078,
+      "sha256": "fe61b3a5a566ec367207b121362b77902844cc57d72da0f70123e3521d25f13a"
+    },
+    {
+      "depth": 6,
+      "filename": "GWBHSSIDA_PHASE0_RUN01_v0.1.0_RESULTS_FOR_REVIEW.zip",
+      "size_bytes": 218095,
+      "sha256": "ef36906c15a651f1b6a335cd7bcb22aa4cd6d00bc78dcf7527a2131f3fd3755a"
+    }
+  ]
+}

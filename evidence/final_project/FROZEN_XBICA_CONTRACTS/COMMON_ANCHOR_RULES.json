@@ -1,0 +1,142 @@
+[
+  {
+    "branch": "B01",
+    "code": "GWBH-PIA",
+    "layer": "L2",
+    "role": "Event-level PE / analysis-chain dependence",
+    "closure_lock": "PASS_GWBHPIA_FIRST_BRANCH_SCIENTIFIC_CLOSURE",
+    "primary_anchor_keys": [
+      "event_identity",
+      "release_identity",
+      "pe_lineage_identity"
+    ],
+    "secondary_anchor_keys": [
+      "parameter_identity",
+      "analysis_configuration_identity"
+    ],
+    "default_bridge_posture": "STRUCTURAL_BEFORE_NUMERIC"
+  },
+  {
+    "branch": "B02",
+    "code": "GWBH-PIPA",
+    "layer": "L3",
+    "role": "Population inference",
+    "closure_lock": "MASTER_PACKAGE_COMPLETE_SECOND_BRANCH_CLOSED",
+    "primary_anchor_keys": [
+      "population_frame_identity",
+      "event_set_identity",
+      "pe_lineage_identity"
+    ],
+    "secondary_anchor_keys": [
+      "population_model_identity",
+      "selection_model_identity"
+    ],
+    "default_bridge_posture": "STRUCTURAL_BEFORE_NUMERIC"
+  },
+  {
+    "branch": "B03",
+    "code": "GWBH-SIFA",
+    "layer": "L4",
+    "role": "Selection / injection dependence",
+    "closure_lock": "NO_GO_PUBLIC_ASSETS_INSUFFICIENT",
+    "primary_anchor_keys": [
+      "selection_release_identity",
+      "injection_campaign_identity",
+      "event_set_identity"
+    ],
+    "secondary_anchor_keys": [
+      "pipeline_identity",
+      "population_frame_identity"
+    ],
+    "default_bridge_posture": "BLOCKED_PUBLIC_ASSET"
+  },
+  {
+    "branch": "B04",
+    "code": "GWBH-RRIDA",
+    "layer": "L5",
+    "role": "Remnant / ringdown inference dependence",
+    "closure_lock": "HOLD_PRIMARY_SCHEMA_UNRESOLVED",
+    "primary_anchor_keys": [
+      "event_identity",
+      "release_identity",
+      "remnant_schema_identity"
+    ],
+    "secondary_anchor_keys": [
+      "waveform_or_fit_identity",
+      "analysis_configuration_identity"
+    ],
+    "default_bridge_posture": "BLOCKED_SCHEMA"
+  },
+  {
+    "branch": "B05",
+    "code": "GWBH-DCIDA",
+    "layer": "L1",
+    "role": "Candidate / detection / catalog surface",
+    "closure_lock": "FINAL_CLOSED",
+    "primary_anchor_keys": [
+      "event_identity",
+      "release_identity",
+      "catalog_identity"
+    ],
+    "secondary_anchor_keys": [
+      "pipeline_identity",
+      "candidate_status_identity"
+    ],
+    "default_bridge_posture": "STRUCTURAL_BEFORE_NUMERIC"
+  },
+  {
+    "branch": "B06",
+    "code": "GWBH-SCDQDA",
+    "layer": "L0",
+    "role": "Public strain / DQ / calibration",
+    "closure_lock": "FINAL_CLOSED",
+    "primary_anchor_keys": [
+      "event_identity",
+      "detector_identity",
+      "strain_release_identity"
+    ],
+    "secondary_anchor_keys": [
+      "dq_identity",
+      "calibration_identity",
+      "time_segment_identity"
+    ],
+    "default_bridge_posture": "STRUCTURAL_ONLY_UNLESS_EXACT_ARTIFACT"
+  },
+  {
+    "branch": "B07",
+    "code": "GWBH-ERIA",
+    "layer": "L6",
+    "role": "Independent-release transport / replication",
+    "closure_lock": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+    "primary_anchor_keys": [
+      "event_identity",
+      "release_identity",
+      "external_release_identity"
+    ],
+    "secondary_anchor_keys": [
+      "summary_schema_identity",
+      "parameter_identity"
+    ],
+    "default_bridge_posture": "IDENTITY_ONLY_UNLESS_REPLICATION_EXECUTED"
+  },
+  {
+    "branch": "B08",
+    "code": "GWBH-SSIDA",
+    "layer": "L7",
+    "role": "Standard-siren cosmology output",
+    "closure_lock": "FINAL_SCIENTIFIC_CLOSED_PUBLIC_OUTPUT_DEPENDENCY_AUDIT_COMPLETE_PARTIAL_PRIMARY_10_OF_12",
+    "primary_anchor_keys": [
+      "cosmology_frame_identity",
+      "route_identity",
+      "release_identity"
+    ],
+    "secondary_anchor_keys": [
+      "pipeline_identity",
+      "population_model_identity",
+      "catalog_identity",
+      "weighting_identity",
+      "posterior_product_identity"
+    ],
+    "default_bridge_posture": "STRUCTURAL_BEFORE_NUMERIC"
+  }
+]

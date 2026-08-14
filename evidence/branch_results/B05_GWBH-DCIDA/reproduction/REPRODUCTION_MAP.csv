@@ -1,0 +1,12 @@
+order,stage,artifact,gate,reproduction_action
+1,Phase0,GWBHDCIDA_PHASE0_RUN02_v0.1.1_RESULTS_FOR_REVIEW.zip,GO_SUMMARY_ONLY,Verify sidecar/CRC; read report and source registry.
+2,Phase1,GWBHDCIDA_PHASE1_RUN03_v0.2.2_RESULTS_FOR_REVIEW.zip,SCHEMA_GATE_PASS,Verify schema/source freeze; direct H40/H41 copies are also under source_freeze/hdf.
+3,Phase2,GWBHDCIDA_PHASE2_RUN03_v0.3.2_RESULTS_FOR_REVIEW.zip,MAPPING_FREEZE_PASS,Verify claim-to-field mapping freeze.
+4,Phase3,GWBHDCIDA_PHASE3_RUN03_v0.4.2_RESULTS_FOR_REVIEW.zip,CONFIRMATORY_CONTRACT_FROZEN,Verify confirmatory contract before event-level access.
+5,Phase4 extraction,GWBHDCIDA_PHASE4_RUN02_v0.5.1_RESULTS_FOR_REVIEW.zip,CANONICAL_EXTRACTION_COMPONENT,Verify 10/10 dataset controlled extraction and row serialization.
+6,Phase4 closure,GWBHDCIDA_PHASE4_RUN03_v0.5.2_RESULTS_FOR_REVIEW.zip,EXTRACTION_REVIEW_PASS,Verify identity adjudication and zero-HDF reread.
+7,Phase5,GWBHDCIDA_PHASE5_RUN01_v0.6.0_RESULTS_FOR_REVIEW.zip,PIPELINE_RESULT_BOUNDED_COMPLETE,Verify pipeline-dependency bounded outputs.
+8,Phase6 source,GWBHDCIDA_PHASE6_RUN02_v0.7.1_RESULTS_FOR_REVIEW.zip,CANONICAL_SURFACE_COMPONENT,Verify official GWOSC JSON snapshot and candidate-surface linkage.
+9,Phase6 closure,GWBHDCIDA_PHASE6_RUN03_v0.7.2_RESULTS_FOR_REVIEW.zip,CATALOG_RESULT_BOUNDED_COMPLETE,Verify M01/M08/M09 synthesis.
+10,Phase7,GWBHDCIDA_PHASE7_RUN01_v0.8.0_RESULTS_FOR_REVIEW.zip,ROBUSTNESS_GATE_PASS,Verify bounded robustness and non-preregistered threshold-sweep boundary.
+11,Phase8,GWBHDCIDA_PHASE8_RUN01_v0.9.0_RESULTS_FOR_REVIEW.zip,FINAL_CLOSED,Verify final finding/RQ/endpoint/claim closure.

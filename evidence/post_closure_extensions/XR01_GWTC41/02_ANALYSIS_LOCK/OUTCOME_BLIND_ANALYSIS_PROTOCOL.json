@@ -1,0 +1,125 @@
+{
+  "protocol_id": "GWBH_ERIA_XR01_GWTC41_COMMON5_TRANSPORT_PROTOCOL_v1.0.0",
+  "frozen_at_utc": "2026-08-14T02:24:12Z",
+  "evidence_label": "PUBLIC_DATA_TARGET_VALUE_BLIND_PREREGISTERED_CROSS_RELEASE_CONCEPTUAL_TRANSPORT",
+  "question": "Within the exact GWTC-4.1 all-eligible O4a frame and substituted three-model triad, does the previously defined public-summary screening score preserve the event ordering of full-posterior model distance?",
+  "source_contract": {
+    "release": "GWTC-4.1",
+    "release_tag": "IGWN-GWTC4p1-18965dda8_5",
+    "zenodo_record": 20275769,
+    "doi": "10.5281/zenodo.20275769",
+    "follow_future_versions": false,
+    "summary_filename": "IGWN-GWTC4p1-18965dda8_5-PESummaryTable.hdf5",
+    "summary_size_bytes": 209500,
+    "summary_md5": "1e56cb4ebd8631b6f7ccc68bd89e6319",
+    "summary_sha256": "df1b28a006c21bb91d88107934eb496451382e78e2ae6371dea6455b0fda8998"
+  },
+  "frozen_candidate_frame": {
+    "n": 44,
+    "include_all_schema_eligible_events": true,
+    "event_list_file": "03_INPUT/CANDIDATE_EVENT_FREEZE.csv",
+    "event_list_sha256": "7b7c4e036669437576be8a1316e8ea5ac05433afe562e927da05cf2687c137b0",
+    "selection_inputs": [
+      "exact presence of all three target result_samples_key rows",
+      "exact official event filename identity",
+      "boolean mask false for common-5 summary fields"
+    ],
+    "numeric_summary_selection": false,
+    "posterior_value_selection": false,
+    "event_replacement": "FORBIDDEN",
+    "complete_case_reduction_after_access": "FORBIDDEN"
+  },
+  "model_contract": {
+    "models": [
+      "IMRPhenomXPHM-SpinTaylor",
+      "SEOBNRv5PHM",
+      "NRSur7dq4"
+    ],
+    "pairs": [
+      ["IMRPhenomXPHM-SpinTaylor", "SEOBNRv5PHM"],
+      ["IMRPhenomXPHM-SpinTaylor", "NRSur7dq4"],
+      ["SEOBNRv5PHM", "NRSur7dq4"]
+    ],
+    "model_addition_deletion_or_substitution_after_lock": "FORBIDDEN"
+  },
+  "parameter_contract": {
+    "parameters": [
+      "chirp_mass_source",
+      "chi_eff",
+      "luminosity_distance",
+      "final_mass_source",
+      "final_spin"
+    ],
+    "parameter_addition_deletion_or_substitution_after_lock": "FORBIDDEN"
+  },
+  "summary_semantic_contract": {
+    "released_byte_semantics": "median=q50; lower=median-q05; upper=q95-median",
+    "out_of_frame_validation_result": "01_PREFLIGHT/SEMANTIC_VALIDATION_RESULT.json",
+    "out_of_frame_validation_result_sha256": "6d05c72b54fffd15aeac3fccb109367321c9f6fb421b61adc71f2814f331bb01",
+    "candidate_triplets_required": 660,
+    "candidate_numeric_summary_scalars_to_read": 1980,
+    "triplet_gate": "mask false; all three finite; lower>=0; upper>=0; lower+upper>0",
+    "failure_action": "FORMAL_NO_GO_WITHOUT_POSTERIOR_ACCESS"
+  },
+  "predictor_contract": {
+    "pair_score": "abs(median_b-median_a) / max((((lower_a+upper_a)+(lower_b+upper_b))/4), 1e-12)",
+    "parameter_aggregation": "maximum across the three model-pair scores",
+    "event_aggregation": "median across the five parameter maxima"
+  },
+  "posterior_contract": {
+    "samples": "unweighted finite scalar posterior elements from each exact C00 model group",
+    "minimum_finite_samples_per_model_parameter": 20,
+    "weight_like_field_action": "FORMAL_NO_GO_SCHEMA_DRIFT",
+    "cell_distance": "SciPy unweighted 1-Wasserstein distance",
+    "independent_cell_replay": "exact empirical-CDF integral",
+    "replay_tolerance": "abs(diff) <= 1e-10*max(1,abs(raw_W1))",
+    "normalization": "mean of the two posterior IQRs; if nonpositive/nonfinite use pooled population SD; floor 1e-12",
+    "event_response": "median of all 15 normalized model-pair/parameter distances",
+    "required_cells": 660,
+    "raw_event_hdf_retention": 0
+  },
+  "primary_test": {
+    "n": 44,
+    "statistic": "average-rank Spearman rho",
+    "alternative": "positive",
+    "permutations": 1000000,
+    "rng": "PCG64DXSM(20260813)",
+    "p_value": "(count(permuted rho >= observed rho - 1e-15)+1)/(1000000+1)",
+    "alpha": 0.05,
+    "support_rule": "rho>0 and p<=0.05",
+    "support_verdict": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+    "non_support_verdict": "NOT_SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+    "constant_vector_verdict": "NOT_SUPPORTED_CONSTANT_VECTOR"
+  },
+  "secondary_only_no_primary_override": {
+    "balanced_response": "80 deterministic equal-n resamples per cell, maximum n=4000, fixed keyed PCG64DXSM seeds; event median",
+    "kendall_tau_b": true,
+    "leave_one_event_out_spearman": true,
+    "may_change_primary_verdict": false
+  },
+  "formal_stop_rules": [
+    "source identity mismatch",
+    "summary semantic complete frame not 44x3x5",
+    "missing/non-numeric/non-scalar posterior field",
+    "weight-like posterior field",
+    "finite posterior sample count below 20",
+    "W1 independent replay mismatch",
+    "final frame not exactly 44 events and 660 cells",
+    "internal exception or lock drift"
+  ],
+  "forbidden_after_lock": [
+    "event replacement",
+    "event/model/parameter deletion",
+    "alternative direction change",
+    "alpha or permutation-count change",
+    "adaptive permutation",
+    "rescue analysis",
+    "primary override by a secondary analysis",
+    "claim-boundary expansion"
+  ],
+  "historical_parent_effect": {
+    "project_or_branch_scientific_closure_modified": false,
+    "prior_GWTC5_run_modified_or_reclassified": false,
+    "this_run_is_an_independent_post_closure_extension": true
+  }
+}

@@ -1,0 +1,13 @@
+gate_id,requirement,observed,state
+G01,exact Phase 5 FROZEN predecessor and nested chain,1,PASS
+G02,official archive size and SHA-256 exact,d7eaad66f60cc57de1f627cba7baab151ae11050dc6edaae79ecadffe5ffd001,PASS
+G03,692 safe archive headers and frozen inventory totals,692,PASS
+G04,88 frozen selected members exact before payload access,88,PASS
+G05,all 44 endpoint schema decisions completed before numerical parsing,44/44,PASS
+G06,P02 exact alias and weight policy resolved per eligible endpoint,0,PASS
+G07,pair support and exact Kerr mode relation audited,0,PASS
+G08,frozen denominator retained without fallback,22,PASS
+G09,finite in-support rows and positive weights for resolved endpoints,0,NOT_RUN
+G10,M01 computed only for resolved pairs using unrounded threshold decision,0,NOT_RUN
+G11,raw archive deleted and no member extracted,1,PASS
+G12,GWTC-5 run-level content and Phase 7 remain sealed,0/0,PASS

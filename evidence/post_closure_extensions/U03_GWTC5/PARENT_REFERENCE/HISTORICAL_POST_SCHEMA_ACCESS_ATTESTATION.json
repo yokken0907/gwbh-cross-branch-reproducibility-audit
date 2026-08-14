@@ -1,0 +1,42 @@
+{
+  "attestation_timestamp_utc": "2026-08-13T18:01:07Z",
+  "scope": "After completing the frozen all-22 identity/schema gate and before any target numeric value access",
+  "schema_gate": {
+    "started_at_utc": "2026-08-13T17:17:04Z",
+    "completed_at_utc": "2026-08-13T17:57:40Z",
+    "processed_events": 22,
+    "pass_events": 22,
+    "fail_or_hold_events": 0,
+    "allowed_metadata_read": [
+      "HDF5 root/group/dataset membership",
+      "dataset shape",
+      "dataset and compound-field dtype metadata",
+      "group and dataset attribute names"
+    ]
+  },
+  "forbidden_access_counts": {
+    "target_summary_numeric_triplet_values": 0,
+    "posterior_sample_elements": 0,
+    "predictor_values": 0,
+    "selected_cohort_events": 0,
+    "Wasserstein_response_values": 0,
+    "correlations": 0,
+    "p_values": 0
+  },
+  "execution_flags": {
+    "posterior_values_accessed": false,
+    "hdf_dataset_elements_accessed": false,
+    "summary_outcome_values_accessed": false,
+    "numeric_analysis_executed": false
+  },
+  "output_hashes": {
+    "OUTPUT/SCHEMA_GATE_SUMMARY.json": "2d2a1c79f0f45a8ad81ec7013fad5f53354566027bc5d2584d781c107a7427db",
+    "OUTPUT/ALL22_SCHEMA_GATE.csv": "ce27d107c67f70155d6ea24cf19b630c47329295579e3716509c440e1c6efb15",
+    "OUTPUT/ALL22_SCHEMA_DETAILS.jsonl": "2c6872f1f6005e149ae2f87259f012dd3e979cfb8c815fad45e573a2fe417c16"
+  },
+  "temporary_downloads": {
+    "retained_files": 0,
+    "policy": "Each official event HDF was deleted immediately after its own identity/schema inspection."
+  },
+  "historical_closure_modified": false
+}

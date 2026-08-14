@@ -1,0 +1,138 @@
+[
+  {
+    "id": "R01",
+    "axis": "PIPELINE",
+    "context": "BPL3P_SPECTRAL_235CBC",
+    "a": "gwcosmo_bpl3p_spectral.json",
+    "b": "icarogw_bpl3p_spectral.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R02",
+    "axis": "PIPELINE",
+    "context": "MLTP_SPECTRAL_231BBH",
+    "a": "gwcosmo_mltp_spectral.json",
+    "b": "icarogw_mltp_spectral.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R03",
+    "axis": "ROUTE_SPECTRAL_TO_DES_LUM",
+    "context": "BPL3P_235CBC",
+    "a": "gwcosmo_bpl3p_spectral.json",
+    "b": "gwcosmo_bpl3p_des_lum.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R04",
+    "axis": "ROUTE_SPECTRAL_TO_GLADE_LUM",
+    "context": "BPL3P_235CBC",
+    "a": "gwcosmo_bpl3p_spectral.json",
+    "b": "gwcosmo_bpl3p_glade_lum.json",
+    "confound": "ROUTE_PLUS_CATALOG"
+  },
+  {
+    "id": "R05",
+    "axis": "CATALOG_DES_TO_GLADE_LUM",
+    "context": "BPL3P_235CBC",
+    "a": "gwcosmo_bpl3p_des_lum.json",
+    "b": "gwcosmo_bpl3p_glade_lum.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R06",
+    "axis": "WEIGHTING_DES",
+    "context": "BPL3P_235CBC",
+    "a": "gwcosmo_bpl3p_des_lum.json",
+    "b": "gwcosmo_bpl3p_des_uni.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R07",
+    "axis": "WEIGHTING_GLADE",
+    "context": "BPL3P_235CBC",
+    "a": "gwcosmo_bpl3p_glade_lum.json",
+    "b": "gwcosmo_bpl3p_glade_uni.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R08",
+    "axis": "ROUTE_SPECTRAL_TO_DES_LUM",
+    "context": "MLTP_231BBH",
+    "a": "gwcosmo_mltp_spectral.json",
+    "b": "gwcosmo_mltp_des_lum.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R09",
+    "axis": "ROUTE_SPECTRAL_TO_GLADE_LUM",
+    "context": "MLTP_231BBH",
+    "a": "gwcosmo_mltp_spectral.json",
+    "b": "gwcosmo_mltp_glade_lum.json",
+    "confound": "ROUTE_PLUS_CATALOG"
+  },
+  {
+    "id": "R10",
+    "axis": "CATALOG_DES_TO_GLADE_LUM",
+    "context": "MLTP_231BBH",
+    "a": "gwcosmo_mltp_des_lum.json",
+    "b": "gwcosmo_mltp_glade_lum.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R11",
+    "axis": "WEIGHTING_DES",
+    "context": "MLTP_231BBH",
+    "a": "gwcosmo_mltp_des_lum.json",
+    "b": "gwcosmo_mltp_des_uni.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R12",
+    "axis": "WEIGHTING_GLADE",
+    "context": "MLTP_231BBH",
+    "a": "gwcosmo_mltp_glade_lum.json",
+    "b": "gwcosmo_mltp_glade_uni.json",
+    "confound": "NONE"
+  },
+  {
+    "id": "R13",
+    "axis": "POPULATION_MODEL",
+    "context": "DES_LUM_235CBC",
+    "a": "gwcosmo_fullpop_des_lum.json",
+    "b": "gwcosmo_bpl3p_des_lum.json",
+    "confound": "NONE_SAME_235CBC_FRAME"
+  },
+  {
+    "id": "R14",
+    "axis": "POPULATION_MODEL",
+    "context": "GLADE_LUM_235CBC",
+    "a": "gwcosmo_fullpop_glade_lum.json",
+    "b": "gwcosmo_bpl3p_glade_lum.json",
+    "confound": "NONE_SAME_235CBC_FRAME"
+  },
+  {
+    "id": "R15",
+    "axis": "POPULATION_PLUS_FRAME",
+    "context": "DES_LUM",
+    "a": "gwcosmo_fullpop_des_lum.json",
+    "b": "gwcosmo_mltp_des_lum.json",
+    "confound": "235CBC_VS_231BBH"
+  },
+  {
+    "id": "R16",
+    "axis": "POPULATION_PLUS_FRAME",
+    "context": "GLADE_LUM",
+    "a": "gwcosmo_fullpop_glade_lum.json",
+    "b": "gwcosmo_mltp_glade_lum.json",
+    "confound": "235CBC_VS_231BBH"
+  },
+  {
+    "id": "R17",
+    "axis": "IFAR_ROBUSTNESS_DES_UNIFORM",
+    "context": "FULLPOP_235CBC",
+    "a": "gwcosmo_fullpop_des_uni.json",
+    "b": "gwcosmo_ifar1_fullpop_des_uni.json",
+    "confound": "PUBLISHED_VALIDATION_SELECTION_THRESHOLD"
+  }
+]

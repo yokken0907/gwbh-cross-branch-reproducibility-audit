@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "main_decision": "GO_PHASE8_MASTER_PACKAGING",
+  "decision_recomputed": "GO_PHASE8_MASTER_PACKAGING",
+  "issues": [],
+  "scientific_closure_state": "FINAL_SCIENTIFIC_CLOSED_PUBLIC_OUTPUT_DEPENDENCY_AUDIT_COMPLETE_PARTIAL_PRIMARY_10_OF_12",
+  "primary_state": "PARTIAL_PRIMARY_VALID_10_OF_12_TWO_PUBLIC_OUTPUT_LIMITED",
+  "P01_P06": {
+    "P01": "PASS",
+    "P02": "PASS_BOUNDED",
+    "P03": "PASS",
+    "P04": "PARTIAL_PRIMARY_PASS_10_OF_12",
+    "P05": "PASS_BOUNDED_NOT_EXACT_HEADLINE_RECONSTRUCTION",
+    "P06": "PASS_STRUCTURAL_ONLY"
+  },
+  "allowed_claim_count": 8,
+  "forbidden_claim_count": 9,
+  "unresolved_count": 6,
+  "boundary_audit": {
+    "network_requests": 0,
+    "posterior_sample_accesses": 0,
+    "large_companion_accesses": 0,
+    "new_H0_metric_computations": 0,
+    "new_pairwise_comparisons": 0,
+    "new_materiality_thresholds": 0,
+    "modified_gravity_analyses": 0,
+    "spin_variant_analyses": 0,
+    "cross_branch_numeric_propagations": 0,
+    "new_cosmology_inferences": 0,
+    "phase8_autostarted": 0
+  }
+}

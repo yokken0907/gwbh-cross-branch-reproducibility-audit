@@ -1,0 +1,6 @@
+{
+  "host": "nds.gwosc.org",
+  "port": 31200,
+  "protocol": 2,
+  "transport": "python-nds2-client direct"
+}

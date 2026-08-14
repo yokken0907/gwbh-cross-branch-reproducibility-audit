@@ -1,0 +1,14 @@
+{
+  "captured_at_utc": "2026-08-14T02:24:12Z",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "python": "3.12.13",
+  "python_compiler": "Clang 21.1.4",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.17.0",
+    "h5py": "3.14.0"
+  },
+  "curl": "8.5.0",
+  "h5py_import_path_for_execution": "/tmp/gwtc41_deps",
+  "note": "The archive records package versions; the temporary import path itself is not part of the archive."
+}

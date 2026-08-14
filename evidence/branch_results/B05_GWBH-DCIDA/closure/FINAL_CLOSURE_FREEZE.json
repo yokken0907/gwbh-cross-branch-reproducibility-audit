@@ -1,0 +1,18 @@
+{
+  "project": "GWBH-DCIDA",
+  "phase": 8,
+  "run": 1,
+  "version": "v0.9.0",
+  "prior_phase7_robustness_freeze_sha256": "185ff7260875c3859d83f040c9a22d017df0b37ee9c77161200b998d4d713f43",
+  "final_closure_freeze_sha256": "25b22c5dbd11ee1479e22dfb64be346079ef7a4da60cc582a57f48cb24e0993a",
+  "components": {
+    "FINDING_SYNTHESIS.csv": "1311aaf4643750eb1b4c22582e3d86c66ea01a480712151ca7d4bfd66538051c",
+    "RESEARCH_QUESTION_CLOSURE.csv": "46d4d560df1a4696eb95db0bb0287a30a049b992e448745da610e5e2d0245b1d",
+    "ENDPOINT_CLOSURE.csv": "9e338b78cbf1fb47cc23521ac0049b0a51f41380a4e602414f884389da235a79",
+    "NEGATIVE_UNRESOLVED_REGISTER.csv": "4842b5872a89f95a348cf231b8b415c6546b3b6e4ac5a803c095e88f945db015",
+    "CLAIM_BOUNDARY_REGISTER.csv": "737ba88d40573d0fbb60544c295d66903d9a2a37e0b2dade5b0d45f65fec31c3",
+    "DOWNSTREAM_STRUCTURAL_MAP.csv": "ead4d4ee6f14066d3b4f82c5b6d38d38903e37fba4087b91673c5de465cf5243",
+    "PAPER_GATE_ASSESSMENT.json": "81b25092b5ef736b4e48bb48bab5d6f3c9d5235127d6fb8221e49029dafc7dcf"
+  },
+  "phase9_started": false
+}

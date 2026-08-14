@@ -1,0 +1,67 @@
+{
+  "audit_timestamp_utc": "2026-08-13T19:22:00Z",
+  "scope": "Independent read-only audit of all authoritative project, post-closure, preregistration/preflight and RUN01 deliverables relevant to B07-U03 alternate-triad reconsideration.",
+  "archive_integrity": "PASS_ALL_FIVE_ZIP_TESTS_AND_EXPECTED_SHA256",
+  "authoritative_archives": [
+    {
+      "name": "GWBH_BLACK_HOLE_VALIDATION_MASTER_OF_ALL_v1.0.0.zip(1).001",
+      "sha256": "266f42a3063bcbe18ccb7247c0a6979a47365c0986cfc57cda6f4e223c157c57",
+      "role": "final project artifact",
+      "status": "MASTER_COMPLETE / FINAL_CLOSED"
+    },
+    {
+      "name": "GWBH_BLACK_HOLE_VALIDATION_POSTCLOSURE_AUDIT_ADDENDUM_v1.0.0.zip",
+      "sha256": "61bb8742dc9926fcfed9e807c2ea968653bf38fdb4c3882f28807e78af52961c",
+      "role": "cross-branch post-closure audit and original B07-U03 candidate assessment",
+      "status": "GO_TO_SEPARATE_PREREGISTRATION_B07_U03_ALT_TRIAD__NO_GO_IMMEDIATE_NUMERIC_EXECUTION"
+    },
+    {
+      "name": "GWBH_B04_U02_ZENODO21454847_SCHEMA_PROVENANCE_AUDIT_ADDENDUM_v1.0.0.zip",
+      "sha256": "210a1e2218f5b2cf05dabeabc964e062f338309c42a2244fe2fc7c6af944f771",
+      "role": "post-closure B04/U02 schema/provenance audit",
+      "status": "NO_GO / B04_U02_REOPEN_NOT_SATISFIED",
+      "relevance": "Confirms no competing B04 numerical route and no change to B04 closure. It is not an input to the B07-U03 statistic."
+    },
+    {
+      "name": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_PREREG_PREFLIGHT_v1.0.0.zip",
+      "sha256": "02d786da2749befb08ce94904e3e2ddef1b2fe04a9fa74f8dede0dda988832ee",
+      "role": "historical frozen v1.0.0 preregistration and all-22 schema preflight",
+      "status": "22/22 identity-and-schema pass; no posterior element read"
+    },
+    {
+      "name": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_NUMERIC_RUN01_v1.0.0_RESULTS_FOR_REVIEW.zip",
+      "sha256": "0d523e36be39ad640976993119f054c8a74330da7a5d40a66bdeae25d2ac2c42",
+      "role": "historical frozen-contract numerical gate execution",
+      "status": "NO_GO_NUMERIC_COMPLETE_FRAME_LT8"
+    }
+  ],
+  "nested_authority": {
+    "project_master_zip_sha256": "87247fb2a664c127570008586cf17110f60e9dc4544899291bca70afa8e1d1f2",
+    "b07_master_zip_sha256": "e222d7b25b3164987fa89bbd95dcc0ffa011140696266410402648f50d43d399",
+    "historical_preregistration_sha256": "87bf315a497808f21b89d5ea44d3e8f0d8e3de6ca79964750a07322c2a81f9a6",
+    "official_summary_hdf5_sha256": "e6437d5763066e0b6f42f913309f4bcc1e1c50a24aa19335ab8d35198216539b"
+  },
+  "closure_invariants": {
+    "project_scientific_closure": "FINAL_PROJECT_SCIENTIFIC_CLOSED_EIGHT_BRANCH_DEPENDENCY_ATLAS_COMPLETE_NO_CROSS_BRANCH_NUMERIC_PROPAGATION",
+    "b07_scientific_closure": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+    "b04_scientific_closure": "COMPLETE_STOPPED / HOLD_PRIMARY_SCHEMA_UNRESOLVED",
+    "modified_by_this_artifact": false
+  },
+  "historical_u03_condition": "A further-reduced-parameter or alternate-model test requires a new branch/extension with parameter/model choices frozen before its target summary values or posterior samples are accessed.",
+  "historical_run01_adjudication": {
+    "contract_fidelity": "PASS",
+    "candidate_events": 22,
+    "summary_triplets_read": 330,
+    "summary_scalars_read": 990,
+    "finite_and_unmasked_triplets": 330,
+    "upper_less_than_lower_triplets": 122,
+    "numeric_complete_events": 0,
+    "posterior_scalars_read": 0,
+    "predictor_computed": false,
+    "cohort_selected": false,
+    "response_or_test_computed": false,
+    "closure": "NO_GO_NUMERIC_COMPLETE_FRAME_LT8",
+    "reopened_or_reclassified_here": false
+  },
+  "independent_finding": "The official notebook describes lower/upper as percentile endpoints, while a locked out-of-candidate posterior comparison proves that the released table stores nonnegative asymmetric error magnitudes. This creates a new, separately auditable semantic basis but does not alter any historical decision."
+}

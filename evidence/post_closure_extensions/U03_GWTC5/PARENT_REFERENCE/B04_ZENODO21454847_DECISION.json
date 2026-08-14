@@ -1,0 +1,64 @@
+{
+  "audit_id": "B04_U02_ZENODO21454847_SCHEMA_PROVENANCE_AUDIT",
+  "version": "1.0.0",
+  "audit_date_utc": "2026-08-13",
+  "source_record": {
+    "title": "Data release for GWTC-5.0: Tests of General Relativity",
+    "zenodo_record_id": "21454847",
+    "doi": "10.5281/zenodo.21454847",
+    "record_url": "https://zenodo.org/records/21454847"
+  },
+  "scope": "schema/provenance-only",
+  "assets": [
+    "pSEOB.tar.gz",
+    "QNMRF.tar.gz",
+    "RD.tar.gz"
+  ],
+  "decision": "NO_GO",
+  "decision_code": "B04_U02_REOPEN_NOT_SATISFIED",
+  "historical_b04_closure_changed": false,
+  "historical_b04_status": {
+    "master_status": "FINAL_CLOSED",
+    "scientific_closure_status": "COMPLETE_STOPPED",
+    "scientific_closure_decision": "HOLD_PRIMARY_SCHEMA_UNRESOLVED"
+  },
+  "numeric_analysis_authorized": false,
+  "numeric_analysis_performed": false,
+  "p02_values_read": 0,
+  "m01_values_computed": 0,
+  "separate_preregistration_candidate": false,
+  "candidate_count": 0,
+  "asset_decisions": {
+    "pSEOB": {
+      "decision": "NO_GO",
+      "exact_alias": "FAIL",
+      "direct_sample": "FAIL_DERIVED_NR_FIT",
+      "declared_support": "FAIL",
+      "paired_endpoint_topology": "FAIL_ONE_ANALYSIS_GROUP_PER_EVENT"
+    },
+    "QNMRF": {
+      "decision": "NO_GO",
+      "exact_alias": "FAIL_NO_POSTERIOR_CONTAINER",
+      "direct_sample": "FAIL_NO_P02_SAMPLES_RELEASED",
+      "declared_support": "FAIL_NO_P02_PRIOR_SUPPORT_RELEASED",
+      "paired_endpoint_topology": "FAIL_SUMMARY_STATISTICS_NOT_P02_POSTERIOR_ENDPOINTS"
+    },
+    "RD": {
+      "decision": "NO_GO",
+      "exact_alias": "FAIL_CHI_NOT_IN_FROZEN_ALIAS_SET",
+      "direct_sample": "POTENTIALLY_PASS_FOR_CHI_UNDER_NEW_CONTRACT",
+      "declared_support": "FAIL_NO_CHI_BOUNDS_IN_RELEASE_CONFIG_OR_EMBEDDED_CONFIG",
+      "paired_endpoint_topology": "STRUCTURE_PRESENT_BUT_NOT_FROZEN_B04_PAIR_SET",
+      "candidate_status": "NOT_READY_WATCH_ITEM_ONLY"
+    }
+  },
+  "decisive_reasons": [
+    "The release contains pSEOB, QNMRF and ringdown-pipeline products, not production-linked evidence for the exact frozen GWTC-4 pyRing endpoints.",
+    "No asset satisfies the frozen exact P02 alias requirement.",
+    "No asset directly establishes common declared P02 support for a qualifying endpoint pair.",
+    "No asset instantiates the frozen 22 D05 pyRing base/variant pair set.",
+    "Inferring support from sample extrema, physical domains or software defaults is forbidden by the frozen B04 contract."
+  ],
+  "future_watch_condition": "Only new official public production-linked run-level evidence giving exact chi_f field semantics, unit, prior bounds/common support and pre-value pair provenance could justify considering a separately versioned preregistration; historical B04 remains unchanged."
+}
+

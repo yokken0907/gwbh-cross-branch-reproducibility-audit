@@ -1,0 +1,28 @@
+{
+  "decision": "GO_TO_SEPARATE_PREREGISTRATION_B07_U03_ALT_TRIAD__NO_GO_IMMEDIATE_NUMERIC_EXECUTION",
+  "scientifically_valuable_new_question_exists": true,
+  "immediate_numeric_execution_authorized": false,
+  "basis": [
+    "The corrected cross-branch identity map supplies no compatible end-to-end numerical chain.",
+    "GWTC-5 public provenance resolves only L03-L06; numerical authorization requires L01-L10 all resolved.",
+    "B04 remains schema-blocked and the closed B07 strict/common-5 triad remains ineligible.",
+    "B02/B08 and other proposed propagation routes lack an exact same-release artifact/lineage contract.",
+    "Existing post-hoc or same-frame reruns would be duplicative or would violate frozen claim boundaries."
+  ],
+  "completed_non_scientific_value": [
+    "Corrected semantic identity and overlap cells.",
+    "Registered the B06 external companion omission.",
+    "Reconciled GWTC-5 candidate versus population event-frame counts.",
+    "Performed a bounded GWTC-5 public-provenance preflight.",
+    "Identified a 22-event B07-U03 alternate-triad frame using identity, mask, byte metadata and one-event schema inspection only."
+  ],
+  "go_candidate": {
+    "id": "B07_U03_ALT_TRIAD_COMMON5",
+    "question": "Does common-5 public-summary model spread screen direct posterior model dependence in O4b for XPHM-SpinTaylor/XPNR/NRSur7dq4?",
+    "recommendation": "GO_TO_SEPARATE_PREREGISTRATION_AND_ALL_22_SCHEMA_GATE_ONLY",
+    "numeric_status": "NOT_EXECUTED",
+    "claim_boundary": "Transport-adapted alternate-triad calibration only; not strict replication or model-superiority evidence."
+  },
+  "only_conditional_go": "Recover the exact B06 companion bytes for archival byte replay; this does not reopen science.",
+  "parent_and_branch_closures": "UNCHANGED"
+}

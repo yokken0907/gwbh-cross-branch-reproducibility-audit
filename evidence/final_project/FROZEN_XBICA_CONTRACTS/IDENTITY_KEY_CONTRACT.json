@@ -1,0 +1,107 @@
+[
+  {
+    "key": "event_identity",
+    "definition": "Canonical GW event/source identity. Aliases may be linked only by explicit release metadata or a frozen alias table; string similarity alone is insufficient.",
+    "numeric_join_role": "REQUIRED_WHEN_EVENT_LEVEL"
+  },
+  {
+    "key": "event_set_identity",
+    "definition": "Exact ordered/unordered event membership frame used by an analysis.",
+    "numeric_join_role": "REQUIRED_FOR_FRAME_LEVEL_NUMERIC"
+  },
+  {
+    "key": "release_identity",
+    "definition": "Exact catalog/data/public-release identity and version (for example GWTC/GWOSC/O4a/O4b context).",
+    "numeric_join_role": "REQUIRED"
+  },
+  {
+    "key": "pe_lineage_identity",
+    "definition": "Exact parameter-estimation posterior release/product lineage used upstream.",
+    "numeric_join_role": "REQUIRED_FOR_PE_PROPAGATION"
+  },
+  {
+    "key": "population_frame_identity",
+    "definition": "Population-analysis frame including event count/type constraints such as 235 CBC or 231 BBH.",
+    "numeric_join_role": "REQUIRED_FOR_POPULATION_COMPARISON"
+  },
+  {
+    "key": "analysis_configuration_identity",
+    "definition": "Pipeline/model/waveform/configuration identity needed to distinguish method changes from release/frame changes.",
+    "numeric_join_role": "REQUIRED_WHEN_METHOD_SPECIFIC"
+  },
+  {
+    "key": "scientific_artifact_identity",
+    "definition": "Exact public artifact or payload identity, including filename/checksum where available.",
+    "numeric_join_role": "REQUIRED_FOR_DIRECT_NUMERIC"
+  },
+  {
+    "key": "detector_identity",
+    "definition": "Detector/site identity for strain/DQ/calibration products.",
+    "numeric_join_role": "REQUIRED_FOR_STRAIN_LEVEL"
+  },
+  {
+    "key": "strain_release_identity",
+    "definition": "Exact public strain release/data product identity.",
+    "numeric_join_role": "REQUIRED_FOR_STRAIN_LEVEL"
+  },
+  {
+    "key": "selection_release_identity",
+    "definition": "Exact selection-function/injection public release or campaign identity.",
+    "numeric_join_role": "REQUIRED_FOR_SELECTION_BRIDGE"
+  },
+  {
+    "key": "injection_campaign_identity",
+    "definition": "Injection campaign/sample identity used to estimate selection effects.",
+    "numeric_join_role": "REQUIRED_FOR_SELECTION_BRIDGE"
+  },
+  {
+    "key": "remnant_schema_identity",
+    "definition": "Exact remnant/ringdown summary schema and field semantics.",
+    "numeric_join_role": "REQUIRED_FOR_RINGDOWN_NUMERIC"
+  },
+  {
+    "key": "external_release_identity",
+    "definition": "Exact external/public release being used for independent replication/transport comparison.",
+    "numeric_join_role": "REQUIRED_FOR_REPLICATION"
+  },
+  {
+    "key": "cosmology_frame_identity",
+    "definition": "Exact source frame/event population entering the cosmology result.",
+    "numeric_join_role": "REQUIRED_FOR_COSMOLOGY"
+  },
+  {
+    "key": "route_identity",
+    "definition": "Cosmology route such as spectral/dark/bright-combined, with exact product semantics.",
+    "numeric_join_role": "REQUIRED_FOR_COSMOLOGY"
+  },
+  {
+    "key": "posterior_product_identity",
+    "definition": "Exact released posterior product representation (samples versus grid+density, etc.).",
+    "numeric_join_role": "REQUIRED_FOR_POSTERIOR_METRICS"
+  },
+  {
+    "key": "pipeline_identity",
+    "definition": "Named inference/search/cosmology pipeline identity.",
+    "numeric_join_role": "CONDITIONAL"
+  },
+  {
+    "key": "population_model_identity",
+    "definition": "Named population model identity.",
+    "numeric_join_role": "CONDITIONAL"
+  },
+  {
+    "key": "catalog_identity",
+    "definition": "Galaxy/event catalog identity and release.",
+    "numeric_join_role": "CONDITIONAL"
+  },
+  {
+    "key": "weighting_identity",
+    "definition": "Catalog weighting convention such as luminosity or uniform.",
+    "numeric_join_role": "CONDITIONAL"
+  },
+  {
+    "key": "parameter_identity",
+    "definition": "Physical/summary parameter name plus units/semantics.",
+    "numeric_join_role": "REQUIRED_FOR_PARAMETER_COMPARISON"
+  }
+]

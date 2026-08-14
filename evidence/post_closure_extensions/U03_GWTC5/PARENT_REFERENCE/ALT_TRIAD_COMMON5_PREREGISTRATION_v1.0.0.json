@@ -1,0 +1,240 @@
+{
+  "project_id": "GWBH-ERIA-U03-ALTTRIAD-COMMON5",
+  "contract_version": "v1.0.0",
+  "preregistration_timestamp_utc": "2026-08-13T17:08:46Z",
+  "status": "PREREGISTERED_AFTER_IDENTITY_MASK_PREFLIGHT_AND_ONE_EVENT_SCHEMA_PROOF_BEFORE_ALL22_SCHEMA_AND_ANY_OUTCOME_VALUE_ACCESS",
+  "extension_type": "SEPARATELY_VERSIONED_POST_CLOSURE_EXTENSION",
+  "historical_parent": {
+    "branch": "B07 / GWBH-ERIA",
+    "parent_status": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+    "parent_master_modified": false,
+    "parent_scientific_closure_modified": false,
+    "parent_u03_state": "OUT_OF_SCOPE_NEW_EXTENSION_REQUIRED",
+    "parent_u03_condition": "A new branch/extension must freeze parameter and model choices before accessing target summary values or posterior samples."
+  },
+  "research_question": "Within the frozen GWTC-5 O4b public PE release and exact alternate model triad, does the preregistered common-5 public-summary spread score positively screen direct posterior distribution dependence?",
+  "estimand": "Association between an event-level public-summary model-spread score and an event-level direct posterior model-distance score in the exact frozen O4b alternate-triad cohort.",
+  "evidential_tier": "PROSPECTIVE_CALIBRATION_ON_ALREADY_PUBLIC_OUTCOME_UNINSPECTED_VALUES",
+  "pre_registration_exposure": {
+    "already_public_data": true,
+    "identity_and_file_metadata_inspected": true,
+    "summary_missingness_masks_inspected": true,
+    "candidate_event_frame_known": true,
+    "one_event_posterior_schema_inspected": true,
+    "all_22_posterior_schemas_inspected": false,
+    "target_summary_numeric_values_accessed": false,
+    "posterior_sample_values_accessed": false,
+    "predictor_computed": false,
+    "cohort_selected": false,
+    "response_computed": false,
+    "correlation_or_p_value_computed": false,
+    "interpretation": "This is not a data-publication holdout. It is a pre-value calibration contract fixed after bounded identity/mask preflight."
+  },
+  "official_release": {
+    "release_label": "GWTC-5.0 / IGWN-GWTC5p0-29ebe06b7_25",
+    "run": "O4b only",
+    "event_date_interval_inclusive": [
+      "2024-04-10",
+      "2025-01-28"
+    ],
+    "summary_record": 20348005,
+    "summary_filename": "IGWN-GWTC5p0-29ebe06b7_25-PESummaryTable.hdf5",
+    "summary_size_bytes": 194697,
+    "summary_md5": "4655c648713f5f7c52256b9dbda7a0ff",
+    "summary_sha256": "e6437d5763066e0b6f42f913309f4bcc1e1c50a24aa19335ab8d35198216539b",
+    "event_hdf_records": [
+      20348005,
+      20348006
+    ],
+    "source_class_rule": "Use the already frozen official categorical O4b BBH-compatible frame; do not add event-specific astrophysical classifications."
+  },
+  "frozen_models": [
+    "IMRPhenomXPHM-SpinTaylor",
+    "IMRPhenomXPNR",
+    "NRSur7dq4"
+  ],
+  "frozen_model_pairs_in_order": [
+    [
+      "IMRPhenomXPHM-SpinTaylor",
+      "IMRPhenomXPNR"
+    ],
+    [
+      "IMRPhenomXPHM-SpinTaylor",
+      "NRSur7dq4"
+    ],
+    [
+      "IMRPhenomXPNR",
+      "NRSur7dq4"
+    ]
+  ],
+  "model_change_from_parent": {
+    "removed": "SEOBNRv5PHM",
+    "added": "IMRPhenomXPNR",
+    "reason_fixed_before_values": "The closed B07 common-5 frame was blocked by masked SEOBNRv5PHM remnant summary triplets. The post-closure schema/mask preflight identified an exact 22-event XPNR alternate frame without deriving or imputing fields.",
+    "interpretive_effect": "This changes the estimand and prevents strict-replication claims."
+  },
+  "frozen_parameters_in_order": [
+    {
+      "field": "chirp_mass_source",
+      "semantic_frame": "source-frame chirp mass",
+      "unit": "solar_mass"
+    },
+    {
+      "field": "chi_eff",
+      "semantic_frame": "effective inspiral spin",
+      "unit": "dimensionless"
+    },
+    {
+      "field": "luminosity_distance",
+      "semantic_frame": "luminosity distance",
+      "unit": "Mpc"
+    },
+    {
+      "field": "final_mass_source",
+      "semantic_frame": "source-frame remnant mass",
+      "unit": "solar_mass"
+    },
+    {
+      "field": "final_spin",
+      "semantic_frame": "dimensionless remnant spin",
+      "unit": "dimensionless"
+    }
+  ],
+  "field_policy": {
+    "exact_names_only": true,
+    "aliases_allowed": false,
+    "derivation_allowed": false,
+    "imputation_allowed": false,
+    "model_substitution_allowed": false,
+    "parameter_reduction_allowed": false,
+    "event_replacement_after_unblinding_allowed": false
+  },
+  "candidate_frame": {
+    "source": "INPUT/CANDIDATE_EVENT_FREEZE.csv",
+    "event_count": 22,
+    "total_event_file_bytes": 4427375872,
+    "event_file_size_rule": "size_bytes < 250000000",
+    "all_three_summary_model_labels_required": true,
+    "all_common5_summary_triplet_masks_unmasked_required": true,
+    "minimum_schema_complete_events": 8,
+    "candidate_events_frozen_before_target_values": true
+  },
+  "schema_gate_before_numeric_access": {
+    "required_for_each_event_model": [
+      "exact HDF root group C00:<model>",
+      "posterior_samples compound dataset",
+      "one-dimensional row axis with row_count > 0",
+      "all five exact fields in the compound dtype",
+      "numeric scalar dtype for each required field",
+      "no explicit weight-like field requiring a nonuniform-weight interpretation"
+    ],
+    "schema_only_access": "Read group/dataset names, shapes, dtypes and attribute names only; do not read any posterior element.",
+    "identity_rule": "Observed file size and MD5 must exactly match INPUT/CANDIDATE_EVENT_FREEZE.csv.",
+    "pass_rule": "At least 8 of the 22 frozen events pass all identity and schema gates for all three models.",
+    "all22_preferred": true,
+    "failure_rule": "If fewer than 8 pass, close the extension as NO_GO_SCHEMA_FRAME_LT8. Do not replace events, models or parameters."
+  },
+  "numeric_entry_gate_for_future_run": {
+    "authorized_in_this_package": false,
+    "summary_triplet_rule": "For every schema-pass event/model/parameter, median, lower and upper must be finite and upper >= lower. Any failing event is ineligible before predictor computation.",
+    "minimum_numeric_eligible_events": 8,
+    "failure_rule": "If fewer than 8 remain, stop as NO_GO_NUMERIC_COMPLETE_FRAME_LT8 before predictor, cohort, posterior response, correlation or p-value.",
+    "no_replacement_or_rescue": true
+  },
+  "predictor": {
+    "name": "summary_median_max_pair_s90_common5_alttriad",
+    "per_model_pair_parameter_formula": "S90 = abs(median_b-median_a) / max((((upper_a-lower_a)+(upper_b-lower_b))/4), 1e-12)",
+    "per_parameter_aggregation": "maximum S90 across the three frozen unordered model pairs",
+    "event_aggregation": "median across the five frozen parameters",
+    "missing_or_nonfinite_rule": "The event is ineligible; do not derive, impute or substitute.",
+    "value_access_timing": "Future explicitly authorized numeric run only."
+  },
+  "cohort_selection": {
+    "cohort_size": 8,
+    "initial_sort": "ascending predictor, then event ID lexicographic",
+    "quartile_assignment": "For N numeric-eligible events sorted as above, zero-based position i gets q=min(3,floor(4*i/N)); q=0..3 maps Q1_LOW, Q2_LOWMID, Q3_HIGHMID, Q4_HIGH.",
+    "within_stratum_hash": "SHA256('GWBH-ERIA-COMMON5-v1|'+event_id)",
+    "within_stratum_sort": "ascending hexadecimal digest, then event ID",
+    "selection": "first two events in each stratum",
+    "events_per_stratum": 2,
+    "no_replacement_after_posterior_unblinding": true,
+    "no_extra_events_for_pvalue_rescue": true
+  },
+  "posterior_response": {
+    "name": "median_posterior_model_norm_W1_common5_alttriad",
+    "sample_cleaning": "Convert the exact parameter field to a flat float array and retain finite values only, matching the frozen Branch01 implementation.",
+    "minimum_finite_values_per_selected_model_parameter_cell": 20,
+    "cell_failure_rule": "If any selected event/model/parameter cell has fewer than 20 finite values, stop the extension without replacement.",
+    "full_w1": "scipy.stats.wasserstein_distance(clean(a), clean(b)) with implicit equal row weights",
+    "scale": "((q75-q25)_a + (q75-q25)_b)/2; if nonfinite or <=0, use numpy.std(concatenate(clean(a),clean(b))) with ddof=0; floor at 1e-12",
+    "normalized_cell_response": "full_w1 / scale",
+    "cells_per_event": 15,
+    "event_aggregation": "median normalized cell response across all 3 model pairs x 5 parameters",
+    "explicit_weight_policy": "If schema inspection finds a weight-like field that would require nonuniform weighting, HOLD before numeric access; do not reinterpret or convert weights."
+  },
+  "balanced_sensitivity": {
+    "role": "SECONDARY_ROBUSTNESS_ONLY",
+    "repetitions": 80,
+    "maximum_samples_per_group": 4000,
+    "base_random_seed": 20260801,
+    "cell_seed": "base_random_seed + little-endian integer from first four bytes of SHA256('|'.join([event,model_a,model_b,parameter])) modulo 1000000000",
+    "algorithm_source": "Frozen Branch01 RUN20 balanced_calibration implementation",
+    "does_not_change_primary_verdict": true
+  },
+  "confirmatory_test": {
+    "n": 8,
+    "x": "summary_median_max_pair_s90_common5_alttriad",
+    "y": "median_posterior_model_norm_W1_common5_alttriad",
+    "statistic": "Spearman rho",
+    "alternative": "positive",
+    "permutation": "all 8! = 40320 permutations",
+    "one_sided_p_rule": "fraction of all permuted rho values >= observed rho, with comparison tolerance 1e-15 as in Branch01 RUN21",
+    "alpha": 0.05,
+    "support_rule": "rho > 0 and exact one-sided p <= 0.05",
+    "non_support_rule": "Preserve as non-support; do not add events, change parameters/models/alpha, or run a rescue analysis.",
+    "tie_rule": "If either rank vector contains ties, stop as HOLD_TIED_RANKS_PARENT_EXACT_TEST_UNDEFINED; do not switch permutation implementations post hoc.",
+    "constant_vector_rule": "Stop as NOT_SUPPORTED_CONSTANT_VECTOR; no alternative statistic becomes primary."
+  },
+  "secondary_outputs": {
+    "allowed": [
+      "balanced response exact Spearman/permutation sensitivity",
+      "common-cell sensitivity if all 15 cells are present for all 8 events",
+      "Kendall tau-b diagnostic",
+      "leave-one-event-out rho range",
+      "descriptive event and cell tables"
+    ],
+    "primary_override_allowed": false
+  },
+  "claim_labels": {
+    "gate_no_go": "ALT_TRIAD_COMMON5_CALIBRATION_NOT_EXECUTED_GATE_NO_GO",
+    "positive": "SUPPORTED_ALT_TRIAD_COMMON5_SCREENING_CALIBRATION_O4B",
+    "negative": "NOT_SUPPORTED_ALT_TRIAD_COMMON5_SCREENING_CALIBRATION_O4B",
+    "forbidden_replication_label": "Do not call either outcome a strict or independent replication of B01/B07."
+  },
+  "claim_boundary": {
+    "maximum_supported_claim": "Whether the exact common-5 public-summary score is or is not supported as a screening proxy for direct posterior differences within this exact O4b alternate triad and frozen cohort.",
+    "forbidden": [
+      "strict replication or non-replication of B01",
+      "model truth, reliability or superiority",
+      "pure waveform-systematic attribution",
+      "population, selection, ringdown or cosmology propagation",
+      "GR, Kerr, no-hair, anomaly or new-physics claims",
+      "generalization beyond this exact release, triad, parameter set and cohort"
+    ]
+  },
+  "stopping_rules": [
+    "Stop before numeric access if fewer than 8 frozen events pass identity and all-three-model schema gates.",
+    "Stop before predictor computation if fewer than 8 schema-pass events pass the frozen numeric summary-completeness gate.",
+    "Stop without replacement if any selected posterior cell has fewer than 20 finite values or requires unresolved nonuniform weights.",
+    "Stop or classify exactly as frozen for ties, constant vectors, support or non-support; no rescue analysis.",
+    "Do not transport this contract silently to a later GWTC release."
+  ],
+  "authorization": {
+    "all22_identity_and_schema_preflight": true,
+    "target_summary_numeric_access": false,
+    "posterior_numeric_access": false,
+    "predictor_or_cohort_computation": false,
+    "response_or_confirmatory_test": false,
+    "next_numeric_run_requires_new_explicit_authorization": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "verified_upstream_masters": 4,
+  "route_matrix_rows": 24,
+  "edge_rows": 4,
+  "relation_class_counts": {
+    "PARTIAL": 10,
+    "NONE": 4,
+    "DIRECT": 5,
+    "STRUCTURAL_ONLY": 5
+  },
+  "numerical_propagation": {
+    "branch01_metric_values_read": 0,
+    "branch02_metric_values_read": 0,
+    "branch05_metric_values_read": 0,
+    "branch07_metric_values_read": 0,
+    "cross_branch_numeric_propagations": 0,
+    "cross_branch_effect_size_combinations": 0,
+    "new_H0_metrics": 0,
+    "new_H0_posterior_accesses": 0,
+    "new_cosmology_inferences": 0,
+    "phase3_or_phase5_large_companion_accesses": 0
+  }
+}

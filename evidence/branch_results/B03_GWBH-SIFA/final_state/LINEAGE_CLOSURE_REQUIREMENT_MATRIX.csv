@@ -1,0 +1,11 @@
+requirement_id,requirement,resolution_mode,resolved,resolved_value,eligible_hit_count,eligible_independence_family_count,review_required_count,note
+L01,production_exact_sensitivity_filename,DIRECT_ONLY,False,,0,0,0,no production-direct exact evidence
+L02,production_spin_representation,DIRECT_ONLY,False,,0,0,0,no production-direct exact evidence
+L03,production_found_rule,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,2,1,0,no direct evidence and fewer than two independent production-linked independence families
+L04,production_snr_threshold,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,0,0,0,no direct evidence and fewer than two independent production-linked independence families
+L05,production_far_threshold,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,3,1,0,no direct evidence and fewer than two independent production-linked independence families
+L06,production_search_set,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,1,1,0,no direct evidence and fewer than two independent production-linked independence families
+L07,production_run_mixture_rule,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,0,0,0,no direct evidence and fewer than two independent production-linked independence families; v1.0.0 L07 adjudication cleared the two exact parent review blockers as NONRESOLVING_CLOSED; L07 remains unresolved
+L08,production_gwpopulation_version_or_commit,DIRECT_ONLY,False,,0,0,0,no production-direct exact evidence
+L09,production_gwpopulation_pipe_version_or_commit,DIRECT_ONLY,False,,0,0,0,no production-direct exact evidence
+L10,population_output_selection_provenance,DIRECT_OR_TWO_INDEPENDENT_EXACT,False,,1,1,0,no direct evidence and fewer than two independent production-linked independence families

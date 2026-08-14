@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+~$*
+reconstructed_outputs/
+GWBHSSIDA_PHASE3_RUN02_v0.4.1_LARGE_EVIDENCE_COMPANION.zip
+GWBHSSIDA_PHASE5_RUN01_v0.6.0_ROBUSTNESS_EVIDENCE_COMPANION.zip

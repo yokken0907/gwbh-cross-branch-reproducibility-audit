@@ -1,0 +1,31 @@
+{
+  "balanced_response_test": {
+    "alpha": 0.05,
+    "alternative": "positive",
+    "extreme_probability_clopper_pearson_99pct": [
+      0.0,
+      5.298303330489366e-06
+    ],
+    "n": 22,
+    "observed_spearman_rho": 0.9062676453980801,
+    "one_sided_extreme_count": 0,
+    "one_sided_plus_one_p": 9.99999000001e-07,
+    "permutations": 1000000,
+    "rng": "PCG64DXSM(20260813)",
+    "status": "COMPUTED",
+    "verdict": "SUPPORTED_RELEASE_SPECIFIC_ALTTRIAD_SUMMARY_SCREENING_CALIBRATION",
+    "x_tie_count": 0,
+    "y_tie_count": 0
+  },
+  "kendall_tau_b": {
+    "p_value_two_sided": 1.7950735147639608e-08,
+    "tau": 0.7662337662337663
+  },
+  "leave_one_event_out_full_response": {
+    "maximum_rho": 0.9428571428571428,
+    "minimum_rho": 0.887012987012987,
+    "rows": 22
+  },
+  "primary_override": false,
+  "role": "SECONDARY_ONLY_NO_PRIMARY_OVERRIDE"
+}

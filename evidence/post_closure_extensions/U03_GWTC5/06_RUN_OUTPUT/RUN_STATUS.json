@@ -1,0 +1,13 @@
+{
+  "candidate_events": 22,
+  "completed_at_utc": "2026-08-13T20:31:51Z",
+  "event_replacement_or_rescue": false,
+  "historical_closure_effect": "NONE",
+  "internal_validation": "PASS",
+  "posterior_cells": 330,
+  "primary_test_executed": true,
+  "run_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_OBRC_RUN01",
+  "started_at_utc": "2026-08-13T19:30:51Z",
+  "status": "NUMERIC_RUN_COMPLETE",
+  "verdict": "SUPPORTED_RELEASE_SPECIFIC_ALTTRIAD_SUMMARY_SCREENING_CALIBRATION"
+}

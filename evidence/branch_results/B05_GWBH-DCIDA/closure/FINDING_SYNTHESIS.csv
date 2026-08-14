@@ -1,0 +1,11 @@
+finding_id,topic,classification,result,claim_boundary
+F01,Candidate identity,STABLE,1510 union candidates; 1328 shared exact-superevent pairs; 182 release-only; no shared fallback dependence.,Identity stability applies only to the frozen public-summary identity rules.
+F02,Release surface membership,VERSION_SENSITIVE,"GWOSC surface transitions: retained=129, promoted=11, demoted=0, absent_both=1370.","Surface transition is public release representation, not a new-search detection claim."
+F03,Single-pipeline / LOPO dependence,PIPELINE_SENSITIVE,single-support confirmed true=5; LOPO lost confirmed=5; unresolved coverage remains large.,Confirmed counts are lower-bound evidence; missing pipeline rows are not imputed.
+F04,Best-pipeline / aggregation dependence,PIPELINE_SENSITIVE,max-p_astro turnover=7/59 fully comparable shared candidates; source-native min-FAR pipeline turnover=41/1328.,No synthetic joint best pipeline and no pipeline scientific-superiority claim.
+F05,GWOSC operator/display surface,SURFACE_SPECIFIC,exact p_astro=0.5 surface rows=2; catalog-false/surface-present candidate-release rows=2.,Surface mismatch is descriptive and not labeled publication error.
+F06,Within-pipeline revision delta,UNRESOLVED,same-pipeline pairs=1694; confirmatory delta units=0.,Metric-specific configuration comparability and pipeline FAR unit are insufficient.
+F07,Negative control,UNRESOLVED,negative-control eligible pipelines=0.,MBTA/cWB are not promoted to unchanged controls from pipeline names alone.
+F08,Direct causal attribution,UNRESOLVED,"M09 grades: consistent_partial=104, composite=25, unresolved=1199, direct_documented=0.",No event-specific production/validation causal documentation was fetched.
+F09,Catalog transition endpoint coverage,UNRESOLVED,"M01: retained=128, surface_only=1, unresolved=1198.","Logical worst-case ranges exist, but unresolved public coverage is not imputed."
+F10,Censoring and frozen threshold rules,STABLE,146 surface p_astro lower bounds are all already >0.5 at the bound; no boundary substitution used.,Numeric threshold grid sweep was not run because no explicit grid was preregistered.

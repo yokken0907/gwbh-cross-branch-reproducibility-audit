@@ -1,0 +1,13 @@
+gate_id,requirement,observed,state
+R01,exact RUN01 predecessor and nested frozen chain,89540d28176ef9da01952f7344b799703ee4061c97cef977cc0022c11d83d360,PASS
+R02,frozen archive size and SHA-256,d7eaad66f60cc57de1f627cba7baab151ae11050dc6edaae79ecadffe5ffd001,PASS
+R03,complete safe tar inventory with 88 selected identities,692/selected=88,PASS
+R04,open 44 config and zero dat payloads,config=44 dat=0,PASS
+R05,44 independent config structure records,captured=44/44,PASS
+R06,direct declarations retained as counts plus hashes,rows=2420 total=2420,PASS
+R07,DEFAULT inheritance recorded separately,inherited_references=0,PASS
+R08,target-like values only under bounded retention,target_rows=88,PASS
+R09,RUN01 equality field corrected for all 22 pairs,22,PASS
+R10,config equality and mode relation remain NOT_EVALUATED,22,PASS
+R11,P02 values and M01 untouched,p02=0 m01=0,PASS
+R12,raw archive/config removed and no later run started,cleanup=True run03=0 phase7=0,PASS

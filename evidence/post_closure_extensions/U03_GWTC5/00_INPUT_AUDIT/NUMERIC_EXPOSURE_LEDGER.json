@@ -1,0 +1,54 @@
+{
+  "ledger_timestamp_utc": "2026-08-13T19:22:00Z",
+  "principle": "Report all known value exposure that can affect design freedom; distinguish candidate-frame outcomes from out-of-frame semantic validation.",
+  "stages": [
+    {
+      "stage": "historical_pre_preregistration_and_schema_preflight",
+      "candidate_identity_and_masks_known": true,
+      "all22_schema_metadata_known": true,
+      "candidate_summary_numeric_scalars_read": 0,
+      "candidate_posterior_scalars_read": 0,
+      "candidate_predictor_or_response_known": false
+    },
+    {
+      "stage": "historical_RUN01",
+      "candidate_summary_numeric_scalars_read": 990,
+      "candidate_posterior_scalars_read": 0,
+      "candidate_predictor_computed": false,
+      "candidate_cohort_selected": false,
+      "candidate_response_computed": false,
+      "candidate_correlation_or_p_value_computed": false
+    },
+    {
+      "stage": "independent_reconsideration_summary_semantic_audit",
+      "release_summary_dataset_read": true,
+      "candidate_summary_values_already_unblinded": true,
+      "corrected_candidate_predictor_computed_before_new_protocol_lock": false,
+      "reason": "Audit whether the sign and ordering behavior can represent percentile endpoints."
+    },
+    {
+      "stage": "locked_out_of_frame_semantic_validation",
+      "event": "GW241109_115924",
+      "event_in_candidate_frame": false,
+      "model": "IMRPhenomXPHM-SpinTaylor",
+      "fields": 5,
+      "finite_samples_per_field": 14582,
+      "posterior_scalar_elements_read": 72910,
+      "inter_model_distance_computed": false,
+      "candidate_posterior_scalars_read": 0
+    }
+  ],
+  "state_immediately_before_new_candidate_run": {
+    "candidate_summary_side": "UNBLINDED",
+    "candidate_posterior_side": "BLIND_ZERO_ELEMENTS_READ",
+    "candidate_response": "UNCOMPUTED",
+    "candidate_correlation_and_p_value": "UNCOMPUTED",
+    "permitted_evidence_label": "POST_SUMMARY_UNBLINDED_CANDIDATE_POSTERIOR_BLIND_RETROSPECTIVE_CALIBRATION",
+    "forbidden_evidence_labels": [
+      "fully prospective preregistration",
+      "data-publication holdout",
+      "strict or independent replication",
+      "repair or continuation of RUN01"
+    ]
+  }
+}

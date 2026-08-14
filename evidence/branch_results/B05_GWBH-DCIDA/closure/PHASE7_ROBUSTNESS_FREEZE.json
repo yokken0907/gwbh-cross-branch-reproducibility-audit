@@ -1,0 +1,19 @@
+{
+  "project": "GWBH-DCIDA",
+  "phase": 7,
+  "run": 1,
+  "version": "v0.8.0",
+  "prior_phase6_catalog_result_freeze_sha256": "6be5a4496a331d3277fda1bccb304edd51acd6ff72fbbdb7e18c25cd523f92c6",
+  "robustness_freeze_sha256": "185ff7260875c3859d83f040c9a22d017df0b37ee9c77161200b998d4d713f43",
+  "components": {
+    "PREREGISTRATION_SCOPE_AUDIT.csv": "4efc140810485c77714df6315d0971704f87b2c11fede05d517d52ae57f4278b",
+    "OPERATOR_BOUNDARY_ROBUSTNESS.csv": "42719cae62f066fbea5484a2fda675104bf66a17052c2fe9570f2fa40681b3ab",
+    "CENSORING_BOUND_ROBUSTNESS.csv": "a1fc295ca28b281378c72c747d2964a66d578e29ad034f6943426acc37600e2e",
+    "IDENTITY_ROBUSTNESS_AUDIT.csv": "e65849cce957253d20e066aaad65c9f1e59c071b410f5bff3e094b15e4df291c",
+    "M01_BOUNDED_TRANSITION_RANGES.csv": "82d03873e53f7064f100cd67290e31018e55630917b2cff805aa73de867ed95e",
+    "ENDPOINT_ROBUSTNESS_SUMMARY.csv": "ca37048db29595a02922eadfc29a197cc70900bc9430d01d35134cf4fc5ecf62",
+    "ROBUSTNESS_FINDING_CLASSIFICATION.csv": "a69cc42512e3e8eedbfd7e3dc0c3972f548af14b258bb438e5a6edfd495aecbc"
+  },
+  "threshold_grid_sweep_run": false,
+  "phase8_started": false
+}

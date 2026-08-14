@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scope": "PHASE6_RUN01_CONFIG_STRUCTURE_BOUNDED_REPAIR",
+  "counters": {
+    "network_head_requests": 1,
+    "network_get_requests": 1,
+    "network_bytes_received": 1908878769,
+    "archive_bytes_hashed": 1908878769,
+    "inventory_tar_member_headers_read": 692,
+    "config_tar_member_headers_read": 692,
+    "config_payloads_opened": 44,
+    "config_structures_captured": 44,
+    "direct_declarations_recorded": 2420,
+    "target_like_declarations_recorded": 88,
+    "dat_header_payloads_opened": 0,
+    "dat_numeric_payloads_opened": 0,
+    "posterior_rows_parsed": 0,
+    "parameter_values_parsed": 0,
+    "confirmatory_metrics_computed": 0,
+    "members_extracted": 0,
+    "raw_dat_or_config_files_retained": 0,
+    "gwtc5_run_level_content_opened": 0,
+    "cross_family_metrics_computed": 0,
+    "phase6_run03_started": 0,
+    "phase7_started": 0
+  }
+}

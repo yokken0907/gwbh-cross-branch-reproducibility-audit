@@ -1,0 +1,10 @@
+finding_id,finding,classification,basis
+R01,Cross-release candidate identity union,STABLE,1328 shared exact-superevent pairs; 182 release-only; no shared fallback dependence.
+R02,GWOSC surface transition counts,STABLE_WITHIN_FROZEN_IDENTITY_RULE,269/269 links are within frozen 1s; max GPS difference remains far below 1s.
+R03,p_astro equality operator difference,SURFACE_SPECIFIC_BOUNDARY,2 exact 0.5 surface rows preserve >= vs > distinction; surface presence is not recomputed.
+R04,Surface p_astro censoring,STABLE_THRESHOLD_CLASS_WITH_BOUNDS,146 lower-bound rows; minimum bound 0.99; no exact substitution.
+R05,M01 catalog transition counts,BOUNDED_BY_PUBLIC_COVERAGE,1198 shared pairs remain catalog-coverage unresolved; logical class ranges reported.
+R06,Pipeline FAR robustness,UNRESOLVED_UNIT,No numeric FAR sweep; combined_far unit remains unresolved.
+R07,Negative-control robustness,NOT_ESTABLISHED,No pipeline has frozen unchanged-control eligibility.
+R08,P01 stable-BBH endpoint,NOT_EVALUABLE,Official BBH class unavailable under current public-summary scope.
+R09,Numeric threshold sweep,NOT_RUN_NOT_PREREGISTERED,No explicit sweep grid was frozen before event-level values were opened.

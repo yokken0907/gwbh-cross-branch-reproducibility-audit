@@ -1,0 +1,38 @@
+[
+  {
+    "id": "F01",
+    "claim": "This branch determines the true value of H0 or resolves the Hubble tension."
+  },
+  {
+    "id": "F02",
+    "claim": "The observed posterior differences prove bias, error, or invalidity in gwcosmo, icarogw, DES Y6, GLADE+, a population model, or the GWTC-5 event frame."
+  },
+  {
+    "id": "F03",
+    "claim": "The IFAR comparisons are statistically significant, materially biased, or scientifically unacceptable merely because they have the largest audited W1/median shifts."
+  },
+  {
+    "id": "F04",
+    "claim": "C11/C12 were successfully preregistered primary comparisons after the Phase5 grid-density conversion."
+  },
+  {
+    "id": "F05",
+    "claim": "Branch01/02/05/07 numerical results explain or quantify the H0 shifts observed in Branch08."
+  },
+  {
+    "id": "F06",
+    "claim": "The FullPop-versus-MLTP differences isolate population-model dependence; those comparisons are confounded by the 235-CBC versus 231-BBH frame difference."
+  },
+  {
+    "id": "F07",
+    "claim": "Modified-gravity, varying-Omega_m or spin-model robustness was audited in this branch."
+  },
+  {
+    "id": "F08",
+    "claim": "The public sample summaries exactly reproduce every published headline summary statistic."
+  },
+  {
+    "id": "F09",
+    "claim": "These frozen-release findings automatically transport unchanged to a future GWTC/cosmology release."
+  }
+]

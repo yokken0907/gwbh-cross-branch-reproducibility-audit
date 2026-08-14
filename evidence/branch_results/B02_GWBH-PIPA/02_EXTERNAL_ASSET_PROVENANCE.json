@@ -1,0 +1,8 @@
+{
+  "official_baseline_hdf5": {
+    "filename": "BBHMassSpinRedshift_BrokenPowerLawTwoPeaks_GaussianComponentSpins_PowerLawRedshift.h5",
+    "size_bytes": 342099032,
+    "sha256": "80ba79716f5ba6e9fd8c8765cf1cc102dbf63f33afd5dfd49ee5f6797a1253ec",
+    "zenodo_record_id": 16911563
+  }
+}

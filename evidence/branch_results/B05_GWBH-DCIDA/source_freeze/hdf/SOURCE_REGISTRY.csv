@@ -1,0 +1,9 @@
+source_id,release_id,kind,url,expected_size,expected_md5,required,max_bytes,holdout
+Z40,GWTC-4.0,metadata,https://zenodo.org/api/records/17602502,,,true,2097152,METADATA
+Z40L,GWTC-4.0,landing,https://zenodo.org/records/17602502,,,true,2097152,DOCUMENTATION
+H40,GWTC-4.0,summary_hdf,https://zenodo.org/api/records/17602502/files/IGWN-GWTC4p0-38214bd95_724-SearchSummaryTable.hdf5/content,991164,6cb1f673fa8c6f1735a39874ca0ffa11,true,5242880,SCHEMA_METADATA_ONLY
+N40,GWTC-4.0,reader_notebook,https://zenodo.org/api/records/17602502/files/GWTC4p0_search_data_release.ipynb/content,345511,d8c801ae572a2480f029d9812a948c44,true,2097152,SOURCE_ONLY_NO_EXECUTION
+Z41,GWTC-4.1,metadata,https://zenodo.org/api/records/20276095,,,true,2097152,METADATA
+Z41L,GWTC-4.1,landing,https://zenodo.org/records/20276095,,,true,2097152,DOCUMENTATION
+H41,GWTC-4.1,summary_hdf,https://zenodo.org/api/records/20276095/files/IGWN-GWTC4p1-18965dda8_5-SearchSummaryTable.hdf5/content,1034296,f2d06f3aab80de8ec4aa97664b323498,true,5242880,SCHEMA_METADATA_ONLY
+N41,GWTC-4.1,reader_notebook,https://zenodo.org/api/records/20276095/files/GWTC4p1_search_data_release.ipynb/content,303660,a3bcd598f069154a9481249f17a9621c,true,2097152,SOURCE_ONLY_NO_EXECUTION

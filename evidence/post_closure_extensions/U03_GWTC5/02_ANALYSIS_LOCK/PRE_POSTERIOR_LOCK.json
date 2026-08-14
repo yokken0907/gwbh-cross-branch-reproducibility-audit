@@ -1,0 +1,30 @@
+{
+  "lock_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_OBRC_PRE_POSTERIOR_LOCK",
+  "lock_timestamp_utc": "2026-08-13T19:29:55Z",
+  "status": "IMMUTABLE_BEFORE_ANY_FROZEN_CANDIDATE_POSTERIOR_ELEMENT_ACCESS",
+  "candidate_posterior_elements_accessed_at_lock": 0,
+  "candidate_response_values_computed_at_lock": 0,
+  "candidate_correlations_or_p_values_computed_at_lock": 0,
+  "result_contingent_changes_allowed": false,
+  "locked_files": [
+    {"path": "00_INPUT_AUDIT/AUTHORITATIVE_INPUT_AUDIT.json", "size_bytes": 3943, "sha256": "0ddb2a38c264f9de1d7b42eac0ce2768162cbb8e184d137fcb9c37345820a9a1"},
+    {"path": "00_INPUT_AUDIT/NUMERIC_EXPOSURE_LEDGER.json", "size_bytes": 2201, "sha256": "4a59ac2e983633eda7621b81810145c8818040e3a1ee4118dc24ec59fc3195c4"},
+    {"path": "01_DESIGN_AUDIT/SEMANTIC_VALIDATION_SELECTION.json", "size_bytes": 3017, "sha256": "923ab95d8c4f8ce1b4a0f108ddf6f537385196f856dee7507545950ce2e400c9"},
+    {"path": "01_DESIGN_AUDIT/SEMANTIC_VALIDATION_RESULT.json", "size_bytes": 4609, "sha256": "8c18e65d9ad9b64bad264f62d1626e8084b1d3d4b8ae47545238d3981ab96c0a"},
+    {"path": "01_DESIGN_AUDIT/SEMANTIC_VALIDATION_LOCK_TIMESTAMP_ERRATUM.json", "size_bytes": 862, "sha256": "55ebf91b9709cf380a876911e4314fb7a9d14c89ae7cd803273864cd2dbd0d70"},
+    {"path": "01_DESIGN_AUDIT/SCIENTIFIC_VALUE_DECISION.json", "size_bytes": 2690, "sha256": "5005a8a89d00507163029721492a7ba41d3f468b8c4305ebc942314549e56217"},
+    {"path": "02_ANALYSIS_LOCK/OUTCOME_BLIND_ANALYSIS_PROTOCOL.json", "size_bytes": 9361, "sha256": "9a404e3b6b4aefa4de3c77a88d0717e60c2bc8ce884d159b4157695e11233200"},
+    {"path": "02_ANALYSIS_LOCK/CLAIM_BOUNDARY.md", "size_bytes": 1390, "sha256": "8a931e9b8dd6ff611ce76f02affaa96d10416f2afc072f6d96045190acb0d197"},
+    {"path": "02_ANALYSIS_LOCK/PRE_POSTERIOR_ACCESS_ATTESTATION.json", "size_bytes": 1010, "sha256": "f0345cfd8ce5b4c3ce830b1138ad28ae04b361d054c38889db534e30926e371e"},
+    {"path": "03_INPUT/CANDIDATE_EVENT_FREEZE.csv", "size_bytes": 7536, "sha256": "a1f1afce2e62d72fd42ce539b834b6d7e416a77b6646f02270d259bf260e84a6"},
+    {"path": "03_INPUT/IGWN-GWTC5p0-29ebe06b7_25-PESummaryTable.hdf5", "size_bytes": 194697, "sha256": "e6437d5763066e0b6f42f913309f4bcc1e1c50a24aa19335ab8d35198216539b"},
+    {"path": "03_INPUT/GWTC5p0_PE_data_release.ipynb", "size_bytes": 2571030, "sha256": "35a045b87ca899f74d10456c8532831aba1f2a76d49fded0cd903ccadb6d1578"},
+    {"path": "04_SRC/run_obrc.py", "size_bytes": 31572, "sha256": "a6c3f7603c096a6b3ae4bd2ae752ebb085c4775e3b8ddf2dcb36d586495e09e7"},
+    {"path": "05_TESTS/test_obrc.py", "size_bytes": 4501, "sha256": "ac2cf4550284979c85bf3abed5c1c56ec468c154462933d388064adce6750371"},
+    {"path": "07_REPRODUCIBILITY/requirements.txt", "size_bytes": 40, "sha256": "3fd591b43e8c202f7c1e01ee4f180dc4b3b1982ca9c884de0a2ee8c62e12a612"},
+    {"path": "07_REPRODUCIBILITY/PRE_RUN_ENVIRONMENT.json", "size_bytes": 600, "sha256": "131b7a0190ca33af0691b8a04645de6efbc3fafbbab073bad03533d377a70514"},
+    {"path": "07_REPRODUCIBILITY/PRE_POSTERIOR_TEST_LOG.txt", "size_bytes": 463, "sha256": "ea609573da34751c44ea49fdc72f586b0c037e1039b5782255c3fe78fffd2ce7"}
+  ],
+  "lock_verification_rule": "The frozen runner must verify size and SHA-256 of every locked file before opening the summary table or downloading any candidate event HDF.",
+  "historical_closure_effect": "NONE"
+}

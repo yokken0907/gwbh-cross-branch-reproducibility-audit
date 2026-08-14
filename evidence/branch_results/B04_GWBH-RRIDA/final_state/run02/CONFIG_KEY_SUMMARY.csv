@@ -1,0 +1,3 @@
+key_canonical,target_id,direct_occurrence_count,endpoint_count_with_direct_occurrence,default_direct_occurrence_count,local_direct_occurrence_count,inherited_reference_count,distinct_key_spelling_count,key_spellings,distinct_value_hash_count
+kerrmodes,KERR_MODES,44,44,0,44,0,1,kerr-modes,6
+maxkerrampratio,TARGET_LIKE_CANDIDATE,44,44,0,44,0,1,max-Kerr-amp-ratio,1

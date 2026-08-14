@@ -1,0 +1,45 @@
+{
+  "closed_at_utc": "2026-08-14T03:41:01Z",
+  "principle": "Separate target identities/masks, out-of-frame semantic values, and frozen-frame target values; disclose every numerical access relevant to design freedom.",
+  "stages": [
+    {
+      "stage": "schema_mask_preflight",
+      "candidate_identity_strings_accessed": true,
+      "candidate_boolean_masks_accessed": true,
+      "candidate_numeric_summary_values_accessed": 0,
+      "candidate_posterior_elements_accessed": 0
+    },
+    {
+      "stage": "locked_out_of_frame_semantic_validation",
+      "event": "GW230605_065343",
+      "event_in_candidate_frame": false,
+      "model": "C00:IMRPhenomXPHM-SpinTaylor",
+      "summary_numeric_scalars_accessed": 15,
+      "posterior_scalar_elements_accessed": 79150,
+      "raw_event_hdf_retained": 0
+    },
+    {
+      "stage": "pre_posterior_lock",
+      "candidate_numeric_summary_values_accessed": 0,
+      "candidate_posterior_elements_accessed": 0,
+      "candidate_predictor_response_correlation_or_p_value_accessed": 0,
+      "locked_files": 29
+    },
+    {
+      "stage": "frozen_numeric_run",
+      "candidate_summary_numeric_scalars_accessed": 1980,
+      "candidate_posterior_scalar_elements_accessed": 9872875,
+      "candidate_posterior_finite_scalar_elements": 9872875,
+      "candidate_posterior_nonfinite_scalar_elements": 0,
+      "candidate_events_completed": 44,
+      "model_parameter_arrays": 660,
+      "inter_model_distance_cells": 660,
+      "primary_test_executed": true,
+      "event_replacement_or_rescue": false,
+      "raw_event_hdf_retained": 0
+    }
+  ],
+  "rejected_43_event_numeric_summary_values_accessed": 0,
+  "rejected_43_event_posterior_elements_accessed": 0,
+  "historical_closure_effect": "NONE"
+}
