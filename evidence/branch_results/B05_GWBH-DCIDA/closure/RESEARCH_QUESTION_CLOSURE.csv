@@ -1,9 +1,0 @@
-rq,question,closure,classification,evidence
-RQ1,Can same candidates be uniquely connected across GWTC-4.0/4.1?,ANSWERED_BOUNDED,STABLE,1510 union; 1328 shared exact-superevent pairs; 182 release-only; no shared fallback dependence.
-RQ2,Can inclusion maintenance/promotion/demotion/unresolved be decomposed?,ANSWERED_PARTIALLY,UNRESOLVED,"M01 retained=128, surface_only=1, unresolved=1198; surface retained=129, promoted=11."
-RQ3,How often is catalog support single-pipeline dependent?,ANSWERED_BOUNDED,PIPELINE_SENSITIVE,single-support confirmed true=5; LOPO lost confirmed=5; unresolved coverage preserved.
-RQ4,How much does max-p_astro/min-FAR aggregation hide disagreement/turnover?,ANSWERED_BOUNDED,PIPELINE_SENSITIVE,max-pastro turnover=7/59 confirmatory units; source-native min-FAR turnover=41/1328.
-RQ5,Can same-pipeline FAR/p_astro revision and threshold crossing be compared?,NOT_ANSWERED_CONFIRMATORY,UNRESOLVED,1694 same-pipeline pairs exist but confirmatory delta eligible units=0; comparability/unit gate unresolved.
-RQ6,Can MBTA/cWB serve as unchanged negative controls?,NOT_ESTABLISHED,UNRESOLVED,negative-control eligible pipelines=0.
-RQ7,Can paper/summary/GWOSC differences be treated as surface-specific rather than publication error?,ANSWERED_BOUNDED,SURFACE_SPECIFIC,catalog-false/surface-present=2; surface-only shared case=1; no mismatch called error.
-RQ8,What can be directly attributed from public evidence?,ANSWERED_AS_BOUNDARY,UNRESOLVED,"M09 consistent_partial=104, composite=25, unresolved=1199, direct_documented=0."

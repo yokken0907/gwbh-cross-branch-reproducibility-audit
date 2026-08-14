@@ -1,8 +1,0 @@
-{
-  "status": "COMPLETE_STOPPED",
-  "closure_state": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
-  "decision": "GO_PHASE5_MASTER_PACKAGING",
-  "version": "v0.5.0",
-  "canonical_report": "outputs/PHASE4_FINAL_CLOSURE_REPORT.json",
-  "independent_review": "outputs/INDEPENDENT_REVIEW.json"
-}

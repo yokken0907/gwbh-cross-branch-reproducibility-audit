@@ -1,9 +1,0 @@
-{
-  "status": "PASS",
-  "decision_recomputed": "HOLD_PRIMARY_SCHEMA_UNRESOLVED",
-  "resolved_pair_count_recomputed": 0,
-  "material_pair_count_recomputed": 0,
-  "issues": [],
-  "phase7_started": 0,
-  "independence_scope": "INTERNAL_RECOMPUTATION_NOT_EXTERNAL_REPLICATION"
-}

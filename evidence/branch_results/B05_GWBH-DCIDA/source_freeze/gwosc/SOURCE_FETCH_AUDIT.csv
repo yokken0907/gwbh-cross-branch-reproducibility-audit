@@ -1,3 +1,0 @@
-source_id,release_id,page,url,http_status,content_type,response_renderer,bytes,sha256,results_count_reported,results_on_page
-GWOSC40,GWTC-4.0,1,https://gwosc.org/api/v2/event-versions?format=json&include-default-parameters=true&pagesize=200&release=GWTC-4.0&page=1,200,application/json,JSON_VALIDATED,216526,7b8f50cb8e0a54bad3c3e2f7edab6860e94c53d2b658d97fd8f8e16b76edb9f1,129,129
-GWOSC41,GWTC-4.1,1,https://gwosc.org/api/v2/event-versions?format=json&include-default-parameters=true&pagesize=200&release=GWTC-4.1&page=1,200,application/json,JSON_VALIDATED,227610,93c9495b3fd1d990bdcdeba8ae9157dbf650b5b72e834e9534b0a1fbf135cde5,140,140

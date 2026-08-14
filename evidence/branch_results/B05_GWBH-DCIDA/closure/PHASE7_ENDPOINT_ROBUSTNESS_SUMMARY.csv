@@ -1,5 +1,0 @@
-endpoint,status,robust_value,unresolved_or_excluded,robustness_class,note
-P01,NOT_EVALUABLE_OFFICIAL_BBH_CLASS_UNAVAILABLE,,official BBH class unavailable,UNRESOLVED_TERMINAL_WITH_CURRENT_SCOPE,No mass/p_BBH substitution.
-P02,BOUNDED_EVALUABLE,single_support_confirmed_true=5; lopo_lost_confirmed=5,single_support_unresolved=2654; lopo_unresolved=2877,STABLE_LOWER_BOUND_EVIDENCE,Counts are not inflated by absent pipeline rows.
-P03,NOT_EVALUABLE_CONFIRMATORY,confirmatory_delta_units=0,same-pipeline pairs=1694,UNRESOLVED_COMPARABILITY,M07 comparability/FAR-unit boundaries preserved.
-P04,BOUNDED_EVALUABLE,pastro_turnover=7/59; source_native_min_far_turnover=41/1328,pastro_turnover_partial_coverage=1269,STABLE_BOUNDED,No joint FAR+p_astro best pipeline synthesized.

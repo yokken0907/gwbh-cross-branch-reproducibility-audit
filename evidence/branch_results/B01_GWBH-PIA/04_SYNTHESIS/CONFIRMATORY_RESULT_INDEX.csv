@@ -1,3 +1,0 @@
-analysis,run,cohort_size,spearman_rho,exact_one_sided_p,exact_two_sided_p,verdict
-release_version_drift,RUN13,8,0.8809523809523809,0.003621031746031746,0.007242063492063492,SUPPORTED_IN_FROZEN_HOLDOUT
-fixed_release_public_analysis_chain_dependence,RUN21,8,0.9523809523809523,0.000570436507936508,0.001140873015873016,SUPPORTED_IN_FROZEN_HOLDOUT
