@@ -1,7 +1,0 @@
-{
-  "status": "COMPLETE_STOPPED",
-  "decision": "GO_PHASE6_DEPENDENCY_METRICS_BOUNDED_23",
-  "version": "v0.6.2",
-  "canonical_report": "outputs/PHASE5_RUN03_REPORT.json",
-  "independent_review": "outputs/INDEPENDENT_REVIEW.json"
-}

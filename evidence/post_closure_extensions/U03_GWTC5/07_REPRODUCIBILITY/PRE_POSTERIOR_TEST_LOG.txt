@@ -1,7 +1,0 @@
-2026-08-13T19:24:00Z
-Command: PYTHONPATH=/tmp/gwbh_reconsider_deps python -m unittest discover -s 05_TESTS -v
-Result: PASS
-Tests run: 11
-Failures: 0
-Errors: 0
-Coverage targets: corrected asymmetric-error S90 formula; endpoint reconstruction; independent empirical-CDF W1; normalized W1 invariant; scale floor; deterministic cell seed; deterministic balanced sampling; tie-aware ranks; constant-vector stop; fixed-seed Monte Carlo replay; 22-event/protocol shape.

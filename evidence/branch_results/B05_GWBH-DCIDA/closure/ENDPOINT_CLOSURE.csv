@@ -1,5 +1,0 @@
-endpoint,closure_status,classification,final_statement
-P01,NOT_EVALUABLE_OFFICIAL_BBH_CLASS_UNAVAILABLE,UNRESOLVED,Stable-BBH transition endpoint is not evaluable because explicit official BBH class is unavailable; no mass/p_BBH substitute was used.
-P02,BOUNDED_EVALUABLE,PIPELINE_SENSITIVE,single_support_confirmed_true=5; lopo_lost_confirmed=5; single_support_unresolved=2654; lopo_unresolved=2877
-P03,NOT_EVALUABLE_CONFIRMATORY,UNRESOLVED,Confirmatory same-pipeline threshold-crossing count is unavailable; configuration comparability/FAR-unit boundaries remain unresolved.
-P04,BOUNDED_EVALUABLE,PIPELINE_SENSITIVE,pastro_turnover=7/59; source_native_min_far_turnover=41/1328; pastro_turnover_partial_coverage=1269

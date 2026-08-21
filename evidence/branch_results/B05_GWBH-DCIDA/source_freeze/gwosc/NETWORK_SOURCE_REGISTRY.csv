@@ -1,3 +1,0 @@
-source_id,release_id,url,purpose
-GWOSC40,GWTC-4.0,https://gwosc.org/api/v2/event-versions?format=json&include-default-parameters=true&pagesize=200&release=GWTC-4.0,Official release-filtered GWOSC event-version surface with default parameters
-GWOSC41,GWTC-4.1,https://gwosc.org/api/v2/event-versions?format=json&include-default-parameters=true&pagesize=200&release=GWTC-4.1,Official release-filtered GWOSC event-version surface with default parameters

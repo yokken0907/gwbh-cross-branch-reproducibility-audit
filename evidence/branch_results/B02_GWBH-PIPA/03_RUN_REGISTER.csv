@@ -1,8 +1,0 @@
-run,decision,purpose
-RUN01,GO_LOCAL_ONLY,Phase 0 public-data feasibility and dependency audit
-RUN02,TARGET_SET_SEMANTICS_REMEDIATION_REQUIRED,"3-event local LOO pilot; weight route passed, degenerate target stopped statistic"
-RUN03,CORRECTED_20_PARAMETER_REPILOT_AUTHORIZED,hyperparameter activity and semantics audit
-RUN04,GO_31_EVENT_LOCAL_CONFIRMATION,corrected 20-parameter 3-event repilot
-RUN05,LOCAL_BASELINE_ROUTE_COMPLETE_POSITIVE_DIRECTION_UNRESOLVED,31-event local LOO and frozen first-branch connection
-RUN06,LOCAL_BASELINE_ROUTE_CLOSED,scientific closure and cache disposition
-RUN07,MASTER_PACKAGE_ASSEMBLED,non-scientific canonical archive assembly

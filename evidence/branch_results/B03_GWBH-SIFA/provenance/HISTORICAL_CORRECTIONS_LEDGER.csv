@@ -1,4 +1,0 @@
-version,issue,effect_on_then_reported_decision,final_resolution
-v1.0.2,"LIVE official sources were frozen as non-resolution-eligible, preventing candidate evidence from becoming resolving evidence.",Could bias closure toward NO-GO.,v1.0.3 added controlled promotion/review-queue logic; v1.0.2 retained as history only.
-v1.0.4,DCC HTTP 200 semantic error page accepted as successful record fetch.,Did not change HOLD because L07 review blockers independently forced HOLD; DCC depth-1 completion claim invalid.,v1.0.5 added semantic error and identity validation.
-v1.0.6,DCC private/auth pages classified as identity mismatch due regex/marker bug.,Did not change HOLD / public non-resolution state.,"v1.0.7 fixed auth precedence, regex and independent-review reclassification."

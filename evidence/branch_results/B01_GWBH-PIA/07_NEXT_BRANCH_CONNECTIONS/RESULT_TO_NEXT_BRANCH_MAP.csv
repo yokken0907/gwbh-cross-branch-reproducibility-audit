@@ -1,6 +1,0 @@
-priority,candidate_branch,connection,question,connection_strength,status
-1,population_inference_propagation_audit,Mass and spin posteriors vary across released analyses.,"How much do event-level analysis-chain differences move population mass, spin, high-mass-tail, and subpopulation inference?",VERY_HIGH,PRIMARY_NEXT_BRANCH
-2,remnant_and_ringdown_propagation_audit,Final mass and final spin repeatedly showed large dependence.,"How does remnant dependence propagate into ringdown, recoil, remnant classification, or related physical claims?",VERY_HIGH,SECONDARY_NEXT_BRANCH
-3,controlled_analysis_chain_ablation,Prior differences alone did not explain the full result.,Which publicly controllable analysis choices dominate when changed one at a time?,HIGH,METHODS_FALLBACK
-4,independent_release_replication,The screening rule has two internal frozen confirmations.,Does the same frozen rule reproduce in a genuinely independent later catalog or release?,HIGH,DEFER_UNTIL_STABLE_INPUT
-5,distance_standard_siren_propagation,Luminosity distance was analysis-dependent in some events.,Can released distance dependence materially affect distance-based or standard-siren inference?,MEDIUM,LATER_BRANCH

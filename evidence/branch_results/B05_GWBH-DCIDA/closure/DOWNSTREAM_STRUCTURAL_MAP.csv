@@ -1,5 +1,0 @@
-upstream_object,downstream_branch,structural_effect,numeric_effect_recomputed
-catalog candidate identity / membership,01 GWBH-PIA,Defines which public events can enter posterior-oriented downstream work.,FALSE
-catalog cohort / membership revision,02 GWBH-PIPA,Can change the catalog-defined population-inference input cohort.,FALSE
-catalog membership / absence,03 GWBH-SIFA,Selection-function branch remains closed/no-go; no pdet/VT impact is inferred.,FALSE
-catalog/remnant event availability,04 GWBH-RRIDA,Can change which catalog events are eligible for later remnant/ringdown studies.,FALSE

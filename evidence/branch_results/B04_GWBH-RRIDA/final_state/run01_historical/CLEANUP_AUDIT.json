@@ -1,8 +1,0 @@
-{
-  "cleanup_pass": true,
-  "raw_archive_retained": false,
-  "raw_dat_files_retained": 0,
-  "raw_config_files_retained": 0,
-  "individual_sample_rows_retained": 0,
-  "result_packaging_authorized": true
-}
