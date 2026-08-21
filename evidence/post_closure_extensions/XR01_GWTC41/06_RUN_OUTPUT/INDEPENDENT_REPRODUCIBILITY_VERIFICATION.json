@@ -1,0 +1,166 @@
+{
+  "checks": [
+    {
+      "check": "all_pre_posterior_locked_files_unchanged",
+      "expected": [],
+      "observed": [],
+      "pass": true
+    },
+    {
+      "check": "candidate_frame_exactly_44_unique_events",
+      "expected": [
+        44,
+        44
+      ],
+      "observed": [
+        44,
+        44
+      ],
+      "pass": true
+    },
+    {
+      "check": "summary_triplets_exactly_660",
+      "expected": 660,
+      "observed": 660,
+      "pass": true
+    },
+    {
+      "check": "summary_triplets_all_pass",
+      "expected": 660,
+      "observed": 660,
+      "pass": true
+    },
+    {
+      "check": "predictor_independent_replay",
+      "expected": "<=1e-15",
+      "observed": 0.0,
+      "pass": true
+    },
+    {
+      "check": "posterior_cell_frame_44x15",
+      "expected": 660,
+      "observed": 660,
+      "pass": true
+    },
+    {
+      "check": "posterior_count_frame_44x3x5",
+      "expected": 660,
+      "observed": 660,
+      "pass": true
+    },
+    {
+      "check": "all_posterior_count_gates_pass",
+      "expected": 660,
+      "observed": 660,
+      "pass": true
+    },
+    {
+      "check": "all_w1_dual_replay_tolerances_pass",
+      "expected": "cellwise <=1e-10*max(1,abs(W1))",
+      "observed": 2.2737367544323206e-13,
+      "pass": true
+    },
+    {
+      "check": "all_44_official_identities_pass",
+      "expected": 44,
+      "observed": 44,
+      "pass": true
+    },
+    {
+      "check": "all_44_event_hdfs_deleted",
+      "expected": 44,
+      "observed": 44,
+      "pass": true
+    },
+    {
+      "check": "identity_manifest_size_md5_replay",
+      "expected": true,
+      "observed": true,
+      "pass": true
+    },
+    {
+      "check": "full_event_response_independent_replay",
+      "expected": "<=1e-15",
+      "observed": 0.0,
+      "pass": true
+    },
+    {
+      "check": "balanced_event_response_independent_replay",
+      "expected": "<=1e-15",
+      "observed": 0.0,
+      "pass": true
+    },
+    {
+      "check": "primary_scipy_spearman_replay",
+      "expected": 0.9468639887244539,
+      "observed": 0.9468639887244538,
+      "pass": true
+    },
+    {
+      "check": "balanced_scipy_spearman_replay",
+      "expected": 0.9496828752642706,
+      "observed": 0.9496828752642706,
+      "pass": true
+    },
+    {
+      "check": "primary_fixed_rng_monte_carlo_replay",
+      "expected": {
+        "extreme": 0,
+        "rho": 0.9468639887244539
+      },
+      "observed": {
+        "extreme": 0,
+        "rho": 0.9468639887244539
+      },
+      "pass": true
+    },
+    {
+      "check": "primary_plus_one_p_replay",
+      "expected": 9.99999000001e-07,
+      "observed": 9.99999000001e-07,
+      "pass": true
+    },
+    {
+      "check": "primary_verdict_replay",
+      "expected": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+      "observed": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+      "pass": true
+    },
+    {
+      "check": "error_ledger_empty",
+      "expected": 0,
+      "observed": 0,
+      "pass": true
+    },
+    {
+      "check": "no_raw_event_hdf_retained",
+      "expected": [],
+      "observed": [],
+      "pass": true
+    },
+    {
+      "check": "terminal_status_complete",
+      "expected": "NUMERIC_RUN_COMPLETE",
+      "observed": "NUMERIC_RUN_COMPLETE",
+      "pass": true
+    },
+    {
+      "check": "no_historical_closure_effect",
+      "expected": "NONE",
+      "observed": "NONE",
+      "pass": true
+    }
+  ],
+  "checks_passed": 23,
+  "checks_total": 23,
+  "primary_replay": {
+    "extreme_count": 0,
+    "plus_one_p": 9.99999000001e-07,
+    "rho": 0.9468639887244539,
+    "verdict": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT"
+  },
+  "status": "PASS",
+  "verification_timestamp_utc": "2026-08-14T03:43:04Z",
+  "verifier": "07_REPRODUCIBILITY/verify_xr01.py",
+  "verifier_imports_frozen_runner": false
+}

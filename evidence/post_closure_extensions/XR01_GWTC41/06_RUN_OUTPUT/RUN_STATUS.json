@@ -1,0 +1,13 @@
+{
+  "candidate_events": 44,
+  "completed_at_utc": "2026-08-14T03:39:54Z",
+  "event_replacement_or_rescue": false,
+  "historical_closure_effect": "NONE",
+  "internal_validation": "PASS",
+  "posterior_cells": 660,
+  "primary_test_executed": true,
+  "run_id": "GWBH_ERIA_XR01_GWTC41_COMMON5_TRANSPORT_RUN01",
+  "started_at_utc": "2026-08-14T02:28:28Z",
+  "status": "NUMERIC_RUN_COMPLETE",
+  "verdict": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT"
+}

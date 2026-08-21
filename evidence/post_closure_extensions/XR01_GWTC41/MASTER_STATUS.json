@@ -1,0 +1,14 @@
+{
+  "artifact_id": "GWBH_ERIA_XR01_GWTC41_COMMON5_TRANSPORT_v1.0.0",
+  "closed_at_utc": "2026-08-14T03:41:01Z",
+  "artifact_status": "FINAL_CLOSED_SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+  "run_id": "GWBH_ERIA_XR01_GWTC41_COMMON5_TRANSPORT_RUN01",
+  "numeric_run_status": "NUMERIC_RUN_COMPLETE",
+  "primary_verdict": "SUPPORTED_CROSS_RELEASE_ALTERNATE_TRIAD_SUMMARY_SCREENING_TRANSPORT",
+  "independent_verification": "PASS_23_OF_23",
+  "post_run_tests": "PASS_11_OF_11",
+  "further_immediate_work": "NO_GO_FURTHER_IMMEDIATE_SAME_DATA_ANALYSIS__XR01_EXTENSION_COMPLETE",
+  "project_master_scientific_closure_modified": false,
+  "any_existing_branch_scientific_closure_modified": false,
+  "prior_GWTC5_extension_modified_or_reclassified": false
+}

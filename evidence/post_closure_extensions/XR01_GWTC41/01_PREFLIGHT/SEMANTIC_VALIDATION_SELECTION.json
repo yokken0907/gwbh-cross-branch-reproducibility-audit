@@ -1,0 +1,27 @@
+{
+  "selection_locked_at_utc": "2026-08-14T02:17:15Z",
+  "selection_status": "LOCKED_BEFORE_ANY_GWTC41_FLOAT_SUMMARY_OR_POSTERIOR_ACCESS",
+  "event": "GW230605_065343",
+  "event_in_candidate_frame": false,
+  "exclusion_reason": "C00:NRSur7dq4 is absent, so this event can never enter the frozen three-model transport cohort.",
+  "model": "C00:IMRPhenomXPHM-SpinTaylor",
+  "parameters": [
+    "chirp_mass_source",
+    "chi_eff",
+    "luminosity_distance",
+    "final_mass_source",
+    "final_spin"
+  ],
+  "selection_rule": "First lexicographic event excluded only by absent NRSur7dq4 while XPHM and SEOBNR rows exist and all common-5 mask fields are false.",
+  "official_filename": "IGWN-GWTC4p1-18965dda8_5-GW230605_065343-combined_PEDataRelease.hdf5",
+  "expected_size_bytes": 219935316,
+  "expected_md5": "51a4c8cef4a9a04defc07fe9ca5a7871",
+  "summary_interpretations_compared": [
+    "endpoint: lower=q05 and upper=q95",
+    "asymmetric_error: lower=median-q05 and upper=q95-median"
+  ],
+  "candidate_summary_numeric_values_accessed_at_selection": 0,
+  "candidate_posterior_elements_accessed_at_selection": 0,
+  "out_of_frame_summary_numeric_values_accessed_at_selection": 0,
+  "out_of_frame_posterior_elements_accessed_at_selection": 0
+}

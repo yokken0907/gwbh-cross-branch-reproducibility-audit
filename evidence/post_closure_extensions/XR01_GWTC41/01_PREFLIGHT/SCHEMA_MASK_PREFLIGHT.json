@@ -1,0 +1,112 @@
+{
+  "boolean_mask_fields_read": [
+    "final_mass_source_median.mask",
+    "final_mass_source_lower.mask",
+    "final_mass_source_upper.mask",
+    "final_spin_median.mask",
+    "final_spin_lower.mask",
+    "final_spin_upper.mask"
+  ],
+  "candidate_posterior_values_accessed": false,
+  "candidate_summary_numeric_values_accessed": false,
+  "claim_boundary": "Official identity, compound-dtype schema, string row identity and boolean masks only; no numeric summary value or posterior element was read.",
+  "common_parameters": [
+    "chirp_mass_source",
+    "chi_eff",
+    "luminosity_distance",
+    "final_mass_source",
+    "final_spin"
+  ],
+  "completed_at_utc": "2026-08-14T02:18:00Z",
+  "eligible_event_count": 44,
+  "eligible_events": [
+    "GW230601_224134",
+    "GW230606_004305",
+    "GW230608_205047",
+    "GW230609_064958",
+    "GW230628_231200",
+    "GW230630_125806",
+    "GW230702_185453",
+    "GW230704_021211",
+    "GW230707_124047",
+    "GW230708_053705",
+    "GW230708_230935",
+    "GW230709_122727",
+    "GW230726_002940",
+    "GW230805_034249",
+    "GW230806_204041",
+    "GW230811_032116",
+    "GW230814_061920",
+    "GW230814_230901",
+    "GW230824_033047",
+    "GW230825_041334",
+    "GW230914_111401",
+    "GW230920_071124",
+    "GW230922_020344",
+    "GW230922_040658",
+    "GW230924_124453",
+    "GW230927_043729",
+    "GW230928_215827",
+    "GW230930_110730",
+    "GW231005_091549",
+    "GW231008_142521",
+    "GW231028_153006",
+    "GW231029_111508",
+    "GW231102_071736",
+    "GW231118_071402",
+    "GW231119_075248",
+    "GW231123_135430",
+    "GW231127_165300",
+    "GW231129_081745",
+    "GW231206_233134",
+    "GW231206_233901",
+    "GW231213_111417",
+    "GW231223_032836",
+    "GW231226_101520",
+    "GW240104_164932"
+  ],
+  "events_with_any_target_model": 87,
+  "floating_point_summary_fields_requested_or_read": [],
+  "official_input_identity": {
+    "GWTC4p1_PE_data_release.ipynb": {
+      "expected": {
+        "md5": "fc8f7abd27d05a88724f91405e20dad3",
+        "sha256": "b19de1ab1037ba261013e71d2d15127b3eb082dd0368c1f4e29c6e10f297fd62",
+        "size": 2887937
+      },
+      "observed": {
+        "md5": "fc8f7abd27d05a88724f91405e20dad3",
+        "pass": true,
+        "sha256": "b19de1ab1037ba261013e71d2d15127b3eb082dd0368c1f4e29c6e10f297fd62",
+        "size": 2887937
+      }
+    },
+    "IGWN-GWTC4p1-18965dda8_5-PESummaryTable.hdf5": {
+      "expected": {
+        "md5": "1e56cb4ebd8631b6f7ccc68bd89e6319",
+        "sha256": "df1b28a006c21bb91d88107934eb496451382e78e2ae6371dea6455b0fda8998",
+        "size": 209500
+      },
+      "observed": {
+        "md5": "1e56cb4ebd8631b6f7ccc68bd89e6319",
+        "pass": true,
+        "sha256": "df1b28a006c21bb91d88107934eb496451382e78e2ae6371dea6455b0fda8998",
+        "size": 209500
+      }
+    }
+  },
+  "posterior_files_opened": 0,
+  "preflight_id": "GWBH_ERIA_XR01_GWTC41_SCHEMA_MASK_PREFLIGHT",
+  "rejected_event_count": 43,
+  "source_release": "GWTC-4.1 / IGWN-GWTC4p1-18965dda8_5",
+  "status": "PASS_44_SCHEMA_MASK_ELIGIBLE",
+  "summary_rows_total": 379,
+  "target_model_rows": 218,
+  "target_models": [
+    "C00:IMRPhenomXPHM-SpinTaylor",
+    "C00:SEOBNRv5PHM",
+    "C00:NRSur7dq4"
+  ],
+  "zenodo_doi": "10.5281/zenodo.20275769",
+  "zenodo_record": 20275769
+}

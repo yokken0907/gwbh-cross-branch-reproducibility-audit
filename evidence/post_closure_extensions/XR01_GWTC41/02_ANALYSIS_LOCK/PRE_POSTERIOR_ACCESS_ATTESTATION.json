@@ -1,0 +1,30 @@
+{
+  "attested_at_utc": "2026-08-14T02:24:12Z",
+  "candidate_frame": "44 GWTC-4.1 O4a events in 03_INPUT/CANDIDATE_EVENT_FREEZE.csv",
+  "candidate_identity_strings_accessed": true,
+  "candidate_boolean_masks_accessed": true,
+  "candidate_numeric_summary_values_accessed": 0,
+  "candidate_posterior_elements_accessed": 0,
+  "candidate_predictors_computed": 0,
+  "candidate_posterior_responses_computed": 0,
+  "candidate_correlations_or_p_values_computed": 0,
+  "out_of_frame_semantic_validation": {
+    "event": "GW230605_065343",
+    "event_in_candidate_frame": false,
+    "model": "C00:IMRPhenomXPHM-SpinTaylor",
+    "summary_numeric_scalars_accessed": 15,
+    "posterior_scalar_elements_accessed": 79150,
+    "inter_model_distance_computed": false,
+    "raw_hdf_retained": false
+  },
+  "prior_GWTC5_result_known": true,
+  "prior_GWTC5_primary_rho_known": true,
+  "effect_on_evidence_label": "This is not a publication holdout or strict replication; it is a public-data target-value-blind preregistered conceptual transport test.",
+  "permitted_evidence_label": "PUBLIC_DATA_TARGET_VALUE_BLIND_PREREGISTERED_CROSS_RELEASE_CONCEPTUAL_TRANSPORT",
+  "forbidden_evidence_labels": [
+    "strict replication",
+    "fully temporally prospective",
+    "independent physical validation",
+    "model truth test"
+  ]
+}

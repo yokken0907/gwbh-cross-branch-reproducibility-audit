@@ -1,0 +1,26 @@
+{
+  "project_id": "GWBH-ERIA",
+  "master_version": "v1.0.0",
+  "status": "MASTER_COMPLETE",
+  "scientific_closure_state": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+  "phase5_role": "ASSEMBLY_ONLY",
+  "replication_test_executed": false,
+  "replication_result": "NOT_AVAILABLE",
+  "non_replication_result": "NOT_AVAILABLE",
+  "strict_track": "STRICT_EXTERNAL_REPLICATION_NOT_EXECUTED_SCHEMA_NO_GO",
+  "adapted_track": "ADAPTED_COMMON5_REPLICATION_NOT_EXECUTED_INSUFFICIENT_COMPLETE_FRAME",
+  "phase3_funnel": {
+    "summary_unique_events": 104,
+    "o4b_date_compatible": 104,
+    "official_bbh_compatible": 104,
+    "strict_three_models": 60,
+    "under_250MB_cap": 42,
+    "o4b_three_models_under_cap": 22,
+    "common5_all_models_finite": 0,
+    "fully_eligible": 0
+  },
+  "allowed_claim_count": 6,
+  "forbidden_claim_count": 6,
+  "unresolved_item_count": 3,
+  "new_scientific_operations_in_phase5": 0
+}

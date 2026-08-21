@@ -1,0 +1,50 @@
+{
+  "decision_timestamp_utc": "2026-08-14T02:24:12Z",
+  "decision": "GO_TO_SEPARATE_GWTC41_CROSS_RELEASE_TRANSPORT_RUN_AFTER_SHA_LOCK",
+  "why_value_exists": [
+    "The completed GWTC-5.0 result is explicitly limited to one O4b release, one 22-event frame and one triad, so an independent O4a cohort directly tests the main unresolved portability boundary.",
+    "GWTC-4.1 contains 44 value-blind events with exact common-5 availability for IMRPhenomXPHM-SpinTaylor, SEOBNRv5PHM and NRSur7dq4, sufficient for a fixed all-event test without event replacement.",
+    "The predictor, posterior response, aggregation rule, direction, alpha and Monte Carlo procedure can be transported unchanged; only the public release and the unavailable middle model change.",
+    "Candidate numeric summary values and candidate posterior elements remain unaccessed, allowing the target contract to be frozen before its outcomes are seen."
+  ],
+  "novelty_and_added_value": "A target-value-blind cross-release conceptual transport test on 44 disjoint O4a events. It evaluates whether the cheap summary/full-posterior rank association survives both a new observing cohort and substitution of SEOBNRv5PHM for the unavailable IMRPhenomXPNR.",
+  "public_data_required": {
+    "release": "GWTC-4.1 / IGWN-GWTC4p1-18965dda8_5",
+    "zenodo_record": 20275769,
+    "doi": "10.5281/zenodo.20275769",
+    "summary_hdf5": "IGWN-GWTC4p1-18965dda8_5-PESummaryTable.hdf5",
+    "candidate_event_hdf5_count": 44,
+    "candidate_event_hdf5_total_bytes": 7909707404
+  },
+  "feasibility": {
+    "schema_mask_preflight": "PASS_44_SCHEMA_MASK_ELIGIBLE",
+    "out_of_frame_semantic_validation": "PASS_ASYMMETRIC_ERROR_MAGNITUDES",
+    "candidate_summary_numeric_values_accessed": 0,
+    "candidate_posterior_elements_accessed": 0,
+    "expected_full_w1_cells": 660,
+    "raw_hdf_retention_required": false
+  },
+  "overlap_with_existing_validation": {
+    "same_predictor_and_response_definitions": true,
+    "same_common5_parameters": true,
+    "same_models": [
+      "IMRPhenomXPHM-SpinTaylor",
+      "NRSur7dq4"
+    ],
+    "substituted_model": {
+      "prior": "IMRPhenomXPNR",
+      "target": "SEOBNRv5PHM",
+      "reason": "IMRPhenomXPNR is not present in the GWTC-4.1 PE release."
+    },
+    "event_overlap": 0,
+    "release_overlap": false,
+    "strict_replication": false
+  },
+  "evidence_label": "PUBLIC_DATA_TARGET_VALUE_BLIND_PREREGISTERED_CROSS_RELEASE_CONCEPTUAL_TRANSPORT",
+  "not_scientific_value": [
+    "It is not an independent physical truth test because predictor and response still derive from the same release products.",
+    "It is not a strict replication because one model differs and the releases/candidate populations differ.",
+    "It cannot support model superiority, causal waveform-systematic attribution, GR/Kerr/no-hair or new-physics claims."
+  ],
+  "historical_closure_effect": "NONE"
+}
