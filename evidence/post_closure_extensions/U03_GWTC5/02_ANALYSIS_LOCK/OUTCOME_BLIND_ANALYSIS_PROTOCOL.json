@@ -1,0 +1,173 @@
+{
+  "protocol_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_OBRC",
+  "protocol_version": "v1.0.0",
+  "run_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_OBRC_RUN01",
+  "protocol_timestamp_utc": "2026-08-13T19:23:00Z",
+  "status": "TO_BE_HASH_LOCKED_BEFORE_ANY_CANDIDATE_POSTERIOR_ELEMENT_ACCESS",
+  "extension_type": "INDEPENDENT_POST_CLOSURE_RECONSIDERATION",
+  "evidence_label": "POST_SUMMARY_UNBLINDED_CANDIDATE_POSTERIOR_BLIND_RETROSPECTIVE_CALIBRATION",
+  "historical_parent_effect": {
+    "project_master_modified": false,
+    "b07_master_modified": false,
+    "b07_scientific_closure_modified": false,
+    "historical_preregistration_modified": false,
+    "historical_run01_modified_or_reclassified": false
+  },
+  "research_question": "Across all 22 previously frozen GWTC-5 O4b events, does a semantically corrected common-5 public-summary model-spread score positively rank full posterior model-distance under the exact IMRPhenomXPHM-SpinTaylor / IMRPhenomXPNR / NRSur7dq4 triad?",
+  "estimand": "The event-level rank association between corrected summary median spread normalized by central-90-percent widths and the median normalized 1-Wasserstein posterior distance across the exact 15 model-pair/parameter cells.",
+  "pre_lock_exposure": {
+    "candidate_summary_values": "UNBLINDED_BY_HISTORICAL_RUN01",
+    "candidate_posterior_elements": 0,
+    "candidate_response_values": 0,
+    "candidate_correlation_or_p_values": 0,
+    "out_of_frame_semantic_probe": "One locked noncandidate event/model, five fields, 72910 posterior scalar elements; no inter-model distance."
+  },
+  "official_release": {
+    "label": "GWTC-5.0 / IGWN-GWTC5p0-29ebe06b7_25",
+    "summary_record": 20348005,
+    "event_records": [20348005, 20348006],
+    "summary_filename": "IGWN-GWTC5p0-29ebe06b7_25-PESummaryTable.hdf5",
+    "summary_size_bytes": 194697,
+    "summary_md5": "4655c648713f5f7c52256b9dbda7a0ff",
+    "summary_sha256": "e6437d5763066e0b6f42f913309f4bcc1e1c50a24aa19335ab8d35198216539b"
+  },
+  "frozen_candidate_frame": {
+    "source": "03_INPUT/CANDIDATE_EVENT_FREEZE.csv",
+    "event_count": 22,
+    "include_all_events": true,
+    "cohort_subselection": false,
+    "event_replacement": false,
+    "event_exclusion_after_posterior_access": false,
+    "file_size_rule": "size_bytes < 250000000",
+    "all_22_required_for_scientific_test": true
+  },
+  "models_in_order": [
+    "IMRPhenomXPHM-SpinTaylor",
+    "IMRPhenomXPNR",
+    "NRSur7dq4"
+  ],
+  "model_pairs_in_order": [
+    ["IMRPhenomXPHM-SpinTaylor", "IMRPhenomXPNR"],
+    ["IMRPhenomXPHM-SpinTaylor", "NRSur7dq4"],
+    ["IMRPhenomXPNR", "NRSur7dq4"]
+  ],
+  "parameters_in_order": [
+    {"field": "chirp_mass_source", "frame": "source", "unit": "solar_mass"},
+    {"field": "chi_eff", "frame": "effective inspiral spin", "unit": "dimensionless"},
+    {"field": "luminosity_distance", "frame": "luminosity distance", "unit": "Mpc"},
+    {"field": "final_mass_source", "frame": "source", "unit": "solar_mass"},
+    {"field": "final_spin", "frame": "remnant spin", "unit": "dimensionless"}
+  ],
+  "field_policy": {
+    "exact_names_only": true,
+    "aliases": false,
+    "derivation_or_imputation": false,
+    "model_or_parameter_substitution": false
+  },
+  "summary_semantic_contract": {
+    "empirically_verified_encoding": {
+      "median": "posterior q50",
+      "lower": "median - posterior q05",
+      "upper": "posterior q95 - median"
+    },
+    "official_notebook_conflict_disclosed": true,
+    "runtime_cell_gate": "For every event/model/parameter, mask flags must be false; median/lower/upper must be finite; lower and upper must be nonnegative; lower+upper must be strictly positive.",
+    "failure": "NO_GO_SUMMARY_SEMANTIC_COMPLETE_FRAME; no event replacement or reduction."
+  },
+  "predictor": {
+    "name": "corrected_summary_median_max_pair_s90_common5_alttriad",
+    "per_pair_parameter_formula": "abs(median_b-median_a) / max((((lower_a+upper_a)+(lower_b+upper_b))/4), 1e-12)",
+    "interpretation": "Median separation divided by the mean of the two central-90-percent half-widths.",
+    "per_parameter_aggregation": "maximum across the three ordered model pairs",
+    "event_aggregation": "median across the five parameters",
+    "all_22_events_retained": true
+  },
+  "posterior_runtime_gate": {
+    "file_identity": "Observed size and MD5 must exactly match 03_INPUT/CANDIDATE_EVENT_FREEZE.csv; compute and record SHA-256.",
+    "schema": "Each exact C00:<model>/posterior_samples compound dataset must contain all five numeric scalar fields and no explicit weight-like field.",
+    "finite_minimum_per_cell": 20,
+    "all_330_model_parameter_cells_required": true,
+    "failure_labels": [
+      "NO_GO_SOURCE_ACQUISITION_FAILURE",
+      "NO_GO_IDENTITY_DRIFT",
+      "NO_GO_SCHEMA_DRIFT",
+      "NO_GO_POSTERIOR_COMPLETE_FRAME"
+    ],
+    "replacement_or_rescue": false
+  },
+  "posterior_response": {
+    "name": "median_posterior_model_norm_W1_common5_alttriad",
+    "cleaning": "Flatten exact field and retain finite values only.",
+    "full_w1": "scipy.stats.wasserstein_distance with implicit equal sample weights",
+    "independent_w1_check": "Exact empirical-CDF integral on sorted samples; require agreement within 1e-10*max(1,abs(W1)).",
+    "scale": "Mean of the two posterior IQRs; if nonfinite or <=0, population standard deviation of concatenated samples; floor at 1e-12.",
+    "normalized_cell": "W1 / scale",
+    "cells_per_event": 15,
+    "event_aggregation": "median across all 15 normalized cells"
+  },
+  "balanced_sensitivity": {
+    "role": "SECONDARY_ONLY",
+    "repetitions": 80,
+    "maximum_samples_per_model_cell": 4000,
+    "base_seed": 20260801,
+    "cell_seed": "base_seed + (little-endian integer from first four SHA256 bytes of 'event|model_a|model_b|parameter') mod 1000000000",
+    "sampling": "For each pair use n=min(n_a,n_b,4000), then draw n values without replacement independently from each model cell in every repetition. If a cell already has n values, its permutation leaves the empirical distribution unchanged.",
+    "event_aggregation": "For each repetition take median across 15 normalized balanced cells, then median across 80 repetitions.",
+    "primary_override": false
+  },
+  "primary_test": {
+    "n": 22,
+    "x": "corrected summary predictor",
+    "y": "full posterior response",
+    "statistic": "Spearman rho implemented as Pearson correlation of average ranks",
+    "alternative": "positive",
+    "ties": "Allowed; scipy average ranks are frozen.",
+    "constant_vector": "NOT_SUPPORTED_CONSTANT_VECTOR",
+    "permutations": 1000000,
+    "permutation_rng": "numpy.random.Generator(numpy.random.PCG64DXSM(20260813))",
+    "permutation_generation": "For each replicate, stable argsort of 22 independent uniform variates produces a permutation of the frozen y-rank vector; batches do not alter RNG order.",
+    "extreme_rule": "permuted rho >= observed rho - 1e-15",
+    "p_value": "(extreme_count + 1) / (1000000 + 1)",
+    "alpha": 0.05,
+    "support": "observed rho > 0 and p_value <= 0.05",
+    "non_support": "All other nonconstant outcomes are NOT_SUPPORTED; no adaptive permutations or rescue test.",
+    "monte_carlo_diagnostic": "Two-sided 99% Clopper-Pearson interval for extreme_count/1000000, diagnostic only and not used to change the frozen decision."
+  },
+  "secondary_outputs": {
+    "allowed": [
+      "balanced-response Spearman rho and the same fixed one-million-permutation diagnostic",
+      "Kendall tau-b for the full response",
+      "leave-one-event-out full-response Spearman rho range",
+      "descriptive event and 330-cell tables"
+    ],
+    "forbidden": [
+      "alternative primary predictor",
+      "event/model/parameter deletion",
+      "two-sided or negative-direction rescue",
+      "alpha change or multiplicity-driven selection",
+      "outlier rescue or event replacement"
+    ],
+    "primary_override": false
+  },
+  "execution_order": [
+    "Verify new protocol/source/test hashes and pre-posterior attestation.",
+    "Verify summary identity and compute all-22 corrected predictor.",
+    "Download event HDF files sequentially in frozen CSV order; verify identity; compute and independently check cells; delete each HDF immediately.",
+    "Stop at the first frozen gate failure without replacement.",
+    "Only after all 22 pass, compute the primary and frozen secondary statistics.",
+    "Run independent output verifier, build manifest and package."
+  ],
+  "retention": {
+    "event_hdf_files": "NOT_RETAINED",
+    "summary_hdf5": "RETAINED_IN_PACKAGE",
+    "derived_scalar_and_audit_tables": "RETAINED",
+    "raw_posterior_samples": "NOT_COPIED_TO_OUTPUT"
+  },
+  "claim_labels": {
+    "supported": "SUPPORTED_RELEASE_SPECIFIC_ALTTRIAD_SUMMARY_SCREENING_CALIBRATION",
+    "not_supported": "NOT_SUPPORTED_RELEASE_SPECIFIC_ALTTRIAD_SUMMARY_SCREENING_CALIBRATION",
+    "gate_stop": "CALIBRATION_NOT_EXECUTED_FORMAL_GATE_NO_GO"
+  },
+  "claim_boundary": "At most, this run can support or not support rank-screening utility of the corrected summary score for full posterior differences in this exact release, 22-event frame, model triad and common-5 set. It cannot establish strict replication, model truth or superiority, causal waveform bias, population/selection/ringdown/cosmology propagation, GR/Kerr/no-hair/anomaly/new physics, or generalization to another release.",
+  "result_contingent_changes": false
+}

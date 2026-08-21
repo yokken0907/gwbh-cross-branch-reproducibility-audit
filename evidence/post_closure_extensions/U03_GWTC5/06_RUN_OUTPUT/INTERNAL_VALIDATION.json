@@ -1,0 +1,13 @@
+{
+  "all_330_w1_values_independently_replayed": true,
+  "deleted_event_hdf_files": 22,
+  "expected_cells": 330,
+  "expected_events": 22,
+  "identity_pass_files": 22,
+  "maximum_w1_absolute_replay_difference": 5.684341886080802e-14,
+  "observed_cells": 330,
+  "observed_events": 22,
+  "primary_rho_matches": true,
+  "primary_rho_recomputed_from_event_table": 0.9017504234895539,
+  "status": "PASS"
+}

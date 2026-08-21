@@ -1,0 +1,16 @@
+{
+  "artifact_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_INDEPENDENT_RECONSIDERATION",
+  "version": "v1.0.0",
+  "status": "COMPLETE_REVIEW_ARCHIVE_READY",
+  "scientific_status": "SUPPORTED_RELEASE_SPECIFIC_ALTTRIAD_SUMMARY_SCREENING_CALIBRATION",
+  "run_id": "GWBH_ERIA_U03_ALTTRIAD_COMMON5_OBRC_RUN01",
+  "numeric_run_complete": true,
+  "internal_validation": "PASS",
+  "independent_reproducibility_verification": "PASS_23_OF_23",
+  "historical_project_master_modified": false,
+  "historical_b07_modified": false,
+  "historical_b04_modified": false,
+  "historical_preregistration_or_run01_modified": false,
+  "raw_event_hdf_retained": 0,
+  "packaging_status_note": "Scientific outputs, independent verification, manifest and package verifier are complete. External ZIP hash is delivered beside the archive."
+}

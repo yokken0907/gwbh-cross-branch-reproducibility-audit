@@ -1,0 +1,10 @@
+{
+  "figure": "PostClosure_Rank_Associations.png",
+  "source_table": "PostClosure_EventMetrics_Source.csv",
+  "rows": 66,
+  "panels": {
+    "A": 22,
+    "B": 44
+  },
+  "claim_boundary": "Visualizes frozen within-frame rank-screening relationships only; not model truth, superiority, causal attribution, or a GR test."
+}
