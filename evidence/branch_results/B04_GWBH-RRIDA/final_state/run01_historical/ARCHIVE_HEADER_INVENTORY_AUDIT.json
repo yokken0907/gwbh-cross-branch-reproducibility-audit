@@ -1,0 +1,15 @@
+{
+  "inventory_complete": true,
+  "member_count": 692,
+  "regular_file_count": 447,
+  "directory_count": 245,
+  "special_member_count": 0,
+  "total_declared_member_bytes": 4637625532,
+  "unsafe_path_count": 0,
+  "duplicate_path_count": 0,
+  "selected_member_count": 88,
+  "compressed_archive_bytes_supplied_to_decompressor": 1908878769,
+  "inventory_elapsed_seconds": 56.78,
+  "member_payload_fileobjects_opened": 0,
+  "members_extracted": 0
+}

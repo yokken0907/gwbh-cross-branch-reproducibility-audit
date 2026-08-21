@@ -1,0 +1,18 @@
+{
+  "archive_url": "https://dcc.ligo.org/public/0206/P2600130/001/pyRing.tar.gz",
+  "archive_size_bytes": 1908878769,
+  "archive_sha256": "d7eaad66f60cc57de1f627cba7baab151ae11050dc6edaae79ecadffe5ffd001",
+  "expected_selected_pair_count": 22,
+  "expected_selected_dat_member_count": 44,
+  "expected_selected_config_member_count": 44,
+  "expected_selected_dat_declared_bytes": 640651356,
+  "phase5_archive_download_authorized": false,
+  "phase5_member_header_read_authorized": false,
+  "phase5_member_payload_open_authorized": false,
+  "phase6_requires_separate_starter": true,
+  "phase6_schema_gate_precedes_numeric_read": true,
+  "phase6_process_all_pairs_without_effect_based_early_stop": true,
+  "raw_archive_retention": "DELETE_AFTER_VERIFIED_PROCESSING_AND_BEFORE_RESULT_PACKAGING",
+  "result_payload_retention": "NO_RAW_DAT_NO_CONFIG_NO_INDIVIDUAL_SAMPLES"
+}
+
