@@ -1,0 +1,13 @@
+{
+  "Date": "Wed, 12 Aug 2026 04:35:51 GMT",
+  "Server": "Apache/2.4.37 (Rocky Linux) OpenSSL/1.1.1k mod_wsgi/4.9.4 Python/3.12",
+  "Vary": "Accept,origin,Cookie",
+  "Allow": "GET, HEAD, OPTIONS",
+  "X-Frame-Options": "DENY",
+  "Content-Length": "216526",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "same-origin",
+  "Cross-Origin-Opener-Policy": "same-origin",
+  "Content-Type": "application/json",
+  "Connection": "close"
+}

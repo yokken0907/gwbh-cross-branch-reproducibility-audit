@@ -1,0 +1,97 @@
+{
+  "contract_version": "COMMON5_ADAPTED_v1",
+  "status": "PREREGISTERED_BEFORE_O4B_SUMMARY_VALUE_ACCESS",
+  "motivation": {
+    "strict_result": "NO_GO_STRICT_REPLICATION",
+    "strict_hard_stop": "MISSING_STRICT_SUMMARY_PARAMETER_SCHEMA",
+    "missing_parameters": [
+      "chirp_mass",
+      "mass_ratio",
+      "chi_p"
+    ],
+    "adaptation_basis": "Exact intersection of the original eight Branch01 parameters with exact median/lower/upper triplets present in the frozen GWTC-5 Stable Release 9 summary schema.",
+    "not_basis": "No O4b summary row value, event/model row value, posterior sample, predictor value, cohort, correlation or p-value was inspected in the formal strict run."
+  },
+  "common5_parameters": [
+    "chirp_mass_source",
+    "chi_eff",
+    "luminosity_distance",
+    "final_mass_source",
+    "final_spin"
+  ],
+  "models": [
+    "IMRPhenomXPHM-SpinTaylor",
+    "NRSur7dq4",
+    "SEOBNRv5PHM"
+  ],
+  "predictor": {
+    "name": "summary_median_max_pair_s90_common5",
+    "per_model_pair_parameter_formula": "S90 = abs(median_b-median_a) / max((((upper_a-lower_a)+(upper_b-lower_b))/4), 1e-12)",
+    "per_parameter_aggregation": "maximum S90 across the 3 unordered strict-model pairs",
+    "event_aggregation": "median across the 5 common parameters",
+    "missing_value_rule": "Any missing/non-finite required triplet makes the event ineligible; do not derive or impute.",
+    "no_alias_or_derivation": true
+  },
+  "response": {
+    "name": "median_posterior_model_norm_W1_common5",
+    "normalized_w1": "Wasserstein-1 distance divided by average pair IQR scale: (((q75-q25)_a + (q75-q25)_b)/2), with pooled std fallback and floor 1e-12, exactly as Branch01.",
+    "cells": "3 unordered strict-model pairs × 5 common parameters = 15 cells/event",
+    "event_aggregation": "median of full normalized W1 over the 15 cells",
+    "balanced_sensitivity": {
+      "repetitions": 80,
+      "max_samples_per_group": 4000,
+      "random_seed": 20260801
+    },
+    "posterior_parameter_rule": "Each selected event must expose all 5 parameters for all 3 strict models; otherwise protocol HOLD/NO-GO, no model substitution."
+  },
+  "eligible_frame": {
+    "release": "GWTC-5.0 Stable Release 9",
+    "run": "O4b only",
+    "event_date_interval_inclusive": [
+      "2024-04-10",
+      "2025-01-28"
+    ],
+    "source_class_rule": "official categorical O4b BBH frame must be frozen before summary predictor-based selection",
+    "strict_three_models_required": true,
+    "event_file_metadata_required": true,
+    "event_hdf5_size_cap_bytes": 250000000,
+    "all_5_summary_triplets_required_for_all_3_models": true,
+    "minimum_eligible_events": 8,
+    "IMRPhenomXPNR_may_replace_missing_model": false
+  },
+  "cohort_selection": {
+    "size": 8,
+    "sort": "ascending predictor, then event ID lexicographic",
+    "quartile_assignment": "For N eligible events sorted as above, zero-based position i gets q=min(3,floor(4*i/N)); q=0..3 maps Q1..Q4.",
+    "within_stratum_selection": "Compute SHA256('GWBH-ERIA-COMMON5-v1|'+event_id), sort ascending hexadecimal digest then event ID, select first two in each stratum.",
+    "events_per_quartile": 2,
+    "no_replacement_after_posterior_unblinding": true,
+    "no_extra_events_for_pvalue_rescue": true
+  },
+  "confirmatory_test": {
+    "n": 8,
+    "x": "summary_median_max_pair_s90_common5",
+    "y": "median_posterior_model_norm_W1_common5",
+    "statistic": "Spearman rho",
+    "alternative": "positive",
+    "permutation": "all 8! = 40320 permutations",
+    "one_sided_p_rule": "fraction of permuted rho >= observed rho, using all permutations exactly",
+    "alpha": 0.05,
+    "support_rule": "rho > 0 and exact one-sided p <= 0.05",
+    "non_support_rule": "Preserve as non-support; do not add events, change common parameters, alter models, or change alpha."
+  },
+  "branch1_bridge": {
+    "role": "POST_HOC_CONTEXT_ONLY_NOT_A_GATE",
+    "predictor_recompute_source": "Frozen Branch01 SUMMARY_MODEL_SPREAD_PARAMETER_PROFILE.csv restricted to the same common5 parameters.",
+    "response_recompute_source": "Frozen Branch01 cumulative POSTERIOR_MODEL_PAIRWISE.csv restricted to the same common5 parameters and original 8-event holdout.",
+    "same_common5_definitions": true,
+    "continuation_gate": false,
+    "claim": "May describe whether the common5 restriction retains the Branch01 association, but cannot upgrade/downgrade the confirmatory status of the original Branch01 test or determine whether O4b is analyzed."
+  },
+  "claim_labels": {
+    "strict_track": "STRICT_EXTERNAL_REPLICATION_NOT_EXECUTED_SCHEMA_NO_GO",
+    "adapted_track_positive": "SUPPORTED_TRANSPORT_ADAPTED_COMMON5_O4B",
+    "adapted_track_negative": "NOT_SUPPORTED_TRANSPORT_ADAPTED_COMMON5_O4B",
+    "forbidden_positive_claim": "Do not call adapted support a strict replication of the original 8-parameter predictor."
+  }
+}

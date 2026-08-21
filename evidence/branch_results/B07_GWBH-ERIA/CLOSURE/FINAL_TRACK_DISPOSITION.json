@@ -1,0 +1,55 @@
+{
+  "STRICT_8_PARAMETER": {
+    "final_state": "STRICT_EXTERNAL_REPLICATION_NOT_EXECUTED_SCHEMA_NO_GO",
+    "test_executed": false,
+    "hard_stop": "MISSING_STRICT_SUMMARY_PARAMETER_SCHEMA",
+    "missing_parameters": [
+      "chirp_mass",
+      "mass_ratio",
+      "chi_p"
+    ],
+    "summary_row_values_used_before_hard_stop": 0,
+    "posterior_accesses": 0,
+    "interpretation": "Transport/schema incompatibility. This is not a failed replication test."
+  },
+  "ADAPTED_COMMON5": {
+    "final_state": "ADAPTED_COMMON5_REPLICATION_NOT_EXECUTED_INSUFFICIENT_COMPLETE_FRAME",
+    "test_executed": false,
+    "hard_stop": "ELIGIBLE_COMMON5_FRAME_LT_8",
+    "common5_parameters": [
+      "chirp_mass_source",
+      "chi_eff",
+      "luminosity_distance",
+      "final_mass_source",
+      "final_spin"
+    ],
+    "funnel": {
+      "summary_unique_events": 104,
+      "o4b_date_compatible": 104,
+      "official_bbh_compatible": 104,
+      "strict_three_models": 60,
+      "under_250MB_cap": 42,
+      "o4b_three_models_under_cap": 22,
+      "common5_all_models_finite": 0,
+      "fully_eligible": 0
+    },
+    "eligible_events": 0,
+    "minimum_required": 8,
+    "predictor_computations": 0,
+    "cohort_selections": 0,
+    "posterior_accesses": 0,
+    "correlation_or_pvalue_computations": 0,
+    "primary_completeness_bottleneck": {
+      "model": "SEOBNRv5PHM",
+      "final_mass_source": {
+        "finite_triplets": 1,
+        "nonfinite_triplets": 103
+      },
+      "final_spin": {
+        "finite_triplets": 1,
+        "nonfinite_triplets": 103
+      }
+    },
+    "interpretation": "Preregistered adapted frame is empty. This is not a failed replication test."
+  }
+}

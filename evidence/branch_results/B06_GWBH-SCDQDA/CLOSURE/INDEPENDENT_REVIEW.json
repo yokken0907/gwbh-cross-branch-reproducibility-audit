@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "main_decision": "GO_PHASE9_MASTER_PACKAGING",
+  "closure_state": "FINAL_CLOSED",
+  "decision_recomputed": "GO_PHASE9_MASTER_PACKAGING",
+  "issues": [],
+  "endpoint_count": 5,
+  "final_class_rows": 40,
+  "final_class_counts": {
+    "PUBLIC_REPRESENTATION_SPECIFIC": 35,
+    "CALIBRATION_LIMITED": 5
+  },
+  "unresolved_item_count": 4,
+  "allowed_claim_count": 7,
+  "forbidden_claim_count": 10,
+  "downstream_map_rows": 4,
+  "forbidden_access": {
+    "network_requests": 0,
+    "new_data_fetches": 0,
+    "new_metrics": 0,
+    "new_thresholds": 0,
+    "new_cohorts": 0,
+    "new_windows": 0,
+    "new_frequency_bands": 0,
+    "search_reruns": 0,
+    "pe_reruns": 0,
+    "phase9_auto_started": false
+  }
+}

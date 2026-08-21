@@ -1,0 +1,5 @@
+branch,structural_dependency,numeric_propagation,attribution_grade,boundary,phase8_closure_state
+01_GWBH-PIA,event strain/calibration/DQ are upstream of PE posterior products,NONE,PARTIAL,no PE rerun or parameter-bias estimate,STRUCTURAL_ONLY_NO_NUMERICAL_PROPAGATION
+02_GWBH-PIPA,population inference depends indirectly on event inclusion and PE products that are downstream of strain/DQ/calibration,NONE,PARTIAL,no population rerun or VT/pdet reconstruction,STRUCTURAL_ONLY_NO_NUMERICAL_PROPAGATION
+04_GWBH-RRIDA,ringdown/remnant inference requires available event strain and therefore structurally depends on upstream public strain state,NONE,PARTIAL,no ringdown rerun,STRUCTURAL_ONLY_NO_NUMERICAL_PROPAGATION
+05_GWBH-DCIDA,candidate/catalog/GWOSC surface objects are the direct downstream identity/time layer linked to audited public strain/DQ/calibration,NONE,DIRECT_STRUCTURAL,no claim that upstream public representation changes candidate truth/significance,STRUCTURAL_ONLY_NO_NUMERICAL_PROPAGATION

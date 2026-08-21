@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_STOPPED",
+  "closure_state": "FINAL_CLOSED",
+  "decision": "GO_PHASE9_MASTER_PACKAGING",
+  "version": "v0.9.0",
+  "canonical_report": "outputs/PHASE8_FINAL_CLOSURE_REPORT.json",
+  "independent_review": "outputs/INDEPENDENT_REVIEW.json"
+}

@@ -1,0 +1,7 @@
+item_id,item,terminal_state,reason,reopen_condition
+U01,Official BBH class for C2/P01,UNAVAILABLE_CURRENT_SCOPE,No explicit class field in the audited public summary/surface source; p_BBH/mass substitution prohibited.,An explicit official source-class mapping is added under a new reviewed scope.
+U02,Pipeline combined_far unit,UNRESOLVED_UNIT,No independently attributable unit was frozen.,Official metric-specific unit documentation becomes available.
+U03,M07 same-pipeline revision delta,UNRESOLVED_COMPARABILITY,Metric-specific configuration comparability was not established.,Direct release-specific configuration lineage establishes same-metric comparability.
+U04,Negative control,NOT_ESTABLISHED,No pipeline has frozen unchanged-control eligibility.,Direct configuration documentation establishes unchanged control status.
+U05,Numeric threshold sweep,NOT_RUN_NOT_PREREGISTERED,No explicit grid was frozen before event-level access.,Do not reopen as confirmatory; only a separately labeled exploratory analysis may define a new grid.
+U06,M01 public-coverage unresolved pairs,UNRESOLVED_COVERAGE,1198 shared pairs cannot be assigned a generic catalog transition without imputing absent pipeline rows.,Additional public candidate×pipeline coverage resolves the missing rows.

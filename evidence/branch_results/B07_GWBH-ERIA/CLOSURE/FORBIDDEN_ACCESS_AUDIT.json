@@ -1,0 +1,15 @@
+{
+  "network_requests": 0,
+  "summary_hdf5_opens": 0,
+  "summary_row_values_read": 0,
+  "predictor_computations": 0,
+  "cohort_selections": 0,
+  "event_posterior_downloads": 0,
+  "event_posterior_hdf5_opens": 0,
+  "posterior_dataset_accesses": 0,
+  "branch1_common5_bridge_computations": 0,
+  "correlation_or_pvalue_computations": 0,
+  "parameter_reductions": 0,
+  "model_substitutions": 0,
+  "phase5_auto_started": false
+}

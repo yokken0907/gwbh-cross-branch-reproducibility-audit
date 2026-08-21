@@ -1,0 +1,58 @@
+{
+  "branch": "GWBH-ERIA",
+  "master_version": "v1.0.0",
+  "scientific_closure_state": "FINAL_CLOSED_NO_REPLICATION_TEST_EXECUTED",
+  "phase5_role": "ASSEMBLY_ONLY",
+  "canonical_closure": {
+    "file": "CANONICAL_LINEAGE/GWBHERIA_PHASE4_RUN01_v0.5.0_RESULTS_FOR_REVIEW.zip",
+    "sha256": "79580e1f25073899688212cf2e71b30a76216a3df6fd34b5360b7edb56c6db61"
+  },
+  "recursive_review_chain": [
+    {
+      "stage": "Phase4 RUN01",
+      "sha256": "79580e1f25073899688212cf2e71b30a76216a3df6fd34b5360b7edb56c6db61",
+      "decision": "GO_PHASE5_MASTER_PACKAGING"
+    },
+    {
+      "stage": "Phase3 RUN01",
+      "sha256": "4b185429d08a9cc995bc5fc54faa478b4bf89831990466d2e5d7cebdf840bfdf",
+      "decision": "NO_GO_ADAPTED_INSUFFICIENT_FRAME"
+    },
+    {
+      "stage": "Phase2 RUN01",
+      "sha256": "ff125abd1c490150e2a8f7dab823263e92b3fb537593caecfd5f8bc63fad0675",
+      "decision": "GO_PHASE3_ADAPTED_SUMMARY_SCREENING_COHORT_FREEZE"
+    },
+    {
+      "stage": "Phase1 RUN02",
+      "sha256": "bcf1fef45169a27e98c91de93d42a80e2538bda2ab8516266ad3eaed36e1f2be",
+      "decision": "NO_GO_STRICT_REPLICATION"
+    },
+    {
+      "stage": "Phase1 RUN01",
+      "sha256": "f0c14a984e2c97f2533342d91cb94367c968ea7e6e8bbec58f6e4abc301a4249",
+      "decision": "HOLD_PHASE1_LOCAL_ENVIRONMENT"
+    },
+    {
+      "stage": "Phase0 RUN01",
+      "sha256": "7f2e1233328ec0aa0ca21db39f2eb3a046b4319afbd29cd88beeb48d329525fa",
+      "decision": "GO_PHASE1_SCHEMA_MODEL_COMPATIBILITY"
+    }
+  ],
+  "branch1_reference_master": {
+    "filename": "GWBHPIA_MASTER_REFERENCE_PACKAGE_v1.0.0_RUN32_RESULTS.zip",
+    "sha256": "07882fb24c04cb2c1c584ebc375e0af6cfb405d488860c67962e55868d371e06",
+    "location": "recursively embedded inside Phase0 -> Phase1 RUN01 -> Phase1 RUN02 -> Phase2 -> Phase3 -> Phase4"
+  },
+  "original_plan": {
+    "filename": "07_GWBH-ERIA_重力波連星ブラックホール独立リリース外部再現性監査_詳細検証計画書_v1.0.docx",
+    "sha256": "9a2e2d5280e4c7ac9005ef1ca48b32ab89e1cc7e1ad6826b21a49e282e35a777"
+  },
+  "adapted_preregistration": {
+    "sha256": "7f8a1617e526c2663375966088fcc2aa85e0a7dcdad0c37c08e14b6025e7d41f",
+    "expected_sha256": "7f8a1617e526c2663375966088fcc2aa85e0a7dcdad0c37c08e14b6025e7d41f"
+  },
+  "official_bbh_source_freeze": {
+    "sha256": "c0f668ace846d9861a6a1a01a822c3362159636dc63c6e7024926fc3e01d8931"
+  }
+}
