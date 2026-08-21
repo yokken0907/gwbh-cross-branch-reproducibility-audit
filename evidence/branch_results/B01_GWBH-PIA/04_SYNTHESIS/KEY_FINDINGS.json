@@ -1,0 +1,35 @@
+{
+  "closure_verdict": "PASS_GWBHPIA_FIRST_BRANCH_SCIENTIFIC_CLOSURE",
+  "release_drift": {
+    "rho": 0.8809523809523809,
+    "exact_one_sided_p": 0.003621031746031746,
+    "verdict": "SUPPORTED_IN_FROZEN_HOLDOUT"
+  },
+  "fixed_release_model_dependence": {
+    "rho": 0.9523809523809523,
+    "exact_one_sided_p": 0.000570436507936508,
+    "kendall_tau_b": 0.8571428571428571,
+    "verdict": "SUPPORTED_IN_FROZEN_HOLDOUT"
+  },
+  "tier_a": {
+    "events": 7,
+    "posterior_median_W1_range": [
+      0.0874465151219338,
+      0.1242585817538777
+    ],
+    "CLEAR_range": [
+      17,
+      21
+    ]
+  },
+  "tier_b_boundaries": {
+    "upper_rank": 8,
+    "upper_median_W1": 0.0679938600341517,
+    "upper_CLEAR": 16,
+    "lower_rank": 13,
+    "lower_median_W1": 0.0532214101690202,
+    "lower_CLEAR": 11
+  },
+  "causal_decomposition": false,
+  "new_physics_claim": false
+}
