@@ -1,0 +1,38 @@
+{
+  "project_id": "GWBH-XBICA",
+  "phase": 4,
+  "run": 1,
+  "version": "v0.5.0",
+  "scientific_closure_state": "FINAL_PROJECT_SCIENTIFIC_CLOSED_EIGHT_BRANCH_DEPENDENCY_ATLAS_COMPLETE_NO_CROSS_BRANCH_NUMERIC_PROPAGATION",
+  "canonical_branch_count": 8,
+  "final_dependency_atlas": {
+    "edge_count": 16,
+    "class_counts": {
+      "PARTIAL_STRUCTURAL": 8,
+      "BLOCKED_PUBLIC_ASSET": 3,
+      "BLOCKED_SCHEMA": 2,
+      "IDENTITY_ONLY": 3
+    },
+    "unresolved_attribution_edges": 8,
+    "direct_numeric_edges": 0
+  },
+  "core_findings": [
+    "The eight branch results can be organized into a single provenance/dependency atlas without rewriting any historical branch closure state.",
+    "The public evidence supports structural and identity-level interoperability, but no project-wide DIRECT_NUMERIC cross-branch transfer was established.",
+    "Every PARTIAL_STRUCTURAL bridge remains causally unresolved; structural upstream/downstream placement does not identify the source of downstream numerical differences.",
+    "Public-asset and schema limitations are reproducible scientific boundary conditions: B03 contributes three BLOCKED_PUBLIC_ASSET bridges and B04 contributes two BLOCKED_SCHEMA bridges.",
+    "Independent-release replication remains an identity/reproducibility boundary because B07 executed no compatible replication test.",
+    "The standard-siren branch contributes bounded public-output-dependence evidence while retaining its 10/12 primary state and its true-H0/causal-bias prohibitions.",
+    "The project therefore functions as a reproducible research foundation and dependency/provenance atlas rather than as a new fundamental black-hole-physics discovery."
+  ],
+  "interpretive_boundary": {
+    "end_to_end_numeric_chain_established": false,
+    "causal_chain_established": false,
+    "new_black_hole_fundamental_physics_claimed": false,
+    "true_H0_determined": false,
+    "hubble_tension_resolved": false,
+    "blocked_edges_treated_as_null_results": false
+  },
+  "reopen_policy": "Historical branch closure states remain immutable. New public releases or newly compatible schemas require separately frozen extensions, not silent updates.",
+  "scientific_work_complete": true
+}
