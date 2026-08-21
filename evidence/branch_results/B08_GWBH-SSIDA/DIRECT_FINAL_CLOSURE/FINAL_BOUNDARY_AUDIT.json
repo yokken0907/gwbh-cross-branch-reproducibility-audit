@@ -1,0 +1,13 @@
+{
+  "network_requests": 0,
+  "posterior_sample_accesses": 0,
+  "large_companion_accesses": 0,
+  "new_H0_metric_computations": 0,
+  "new_pairwise_comparisons": 0,
+  "new_materiality_thresholds": 0,
+  "modified_gravity_analyses": 0,
+  "spin_variant_analyses": 0,
+  "cross_branch_numeric_propagations": 0,
+  "new_cosmology_inferences": 0,
+  "phase8_autostarted": 0
+}

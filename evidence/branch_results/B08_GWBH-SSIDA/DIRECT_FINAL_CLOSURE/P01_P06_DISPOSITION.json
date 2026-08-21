@@ -1,0 +1,38 @@
+[
+  {
+    "id": "P01",
+    "question": "Can the GWTC-5.0 cosmology paper/release/file lineage be frozen reproducibly?",
+    "disposition": "PASS",
+    "answer": "Yes. The arXiv/Zenodo identity and a 62-file checksum-bearing inventory were frozen before scientific-file content access."
+  },
+  {
+    "id": "P02",
+    "question": "Can the published 236-source cosmology frame and event-selection lineage be traced?",
+    "disposition": "PASS_BOUNDED",
+    "answer": "Yes at the public-release provenance level: 236 sources, 235 dark sirens plus GW170817, with the published selection context. Event truth/FAR values were not independently re-adjudicated."
+  },
+  {
+    "id": "P03",
+    "question": "Can spectral/catalog/bright/pipeline/model routes be decomposed into a machine-readable registry?",
+    "disposition": "PASS",
+    "answer": "Yes. gwcosmo/icarogw, FullPop/BPL3P/MLTP, spectral/DES/GLADE+, luminosity/uniform weighting, final bright combinations and published validation variants were registered."
+  },
+  {
+    "id": "P04",
+    "question": "Can public H0 posterior dependence be described at posterior level?",
+    "disposition": "PARTIAL_PRIMARY_PASS_10_OF_12",
+    "answer": "Yes for C01-C10. C11/C12 are not valid primary sample comparisons because the GW170817 artifact is a grid plus density, not direct samples. Phase5 converted it only as an explicitly post-hoc diagnostic."
+  },
+  {
+    "id": "P05",
+    "question": "Can the headline H0 posterior composition be checked from public release products?",
+    "disposition": "PASS_BOUNDED_NOT_EXACT_HEADLINE_RECONSTRUCTION",
+    "answer": "The final spectral+GW170817 and dark+GW170817 public posterior products were loaded and their sample summaries cross-checked against the public summary table. The recomputed sample summaries are close but not numerically identical to the published summary entries, so this branch does not claim exact headline-statistic reconstruction."
+  },
+  {
+    "id": "P06",
+    "question": "Can upstream branches be mapped structurally into the GWTC-5 cosmology output without invented numerical propagation?",
+    "disposition": "PASS_STRUCTURAL_ONLY",
+    "answer": "Yes. Four canonical upstream Masters were verified, a 24-row route matrix and 4-edge register were produced, and all upstream-to-H0 numerical propagation counters remained zero."
+  }
+]

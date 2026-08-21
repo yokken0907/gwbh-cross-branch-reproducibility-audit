@@ -1,0 +1,130 @@
+{
+  "contract_version": "GWBHSSIDA_H0_DEPENDENCY_v1",
+  "status": "PREREGISTERED_BEFORE_LARGE_ROUTE_CONTENT_OR_SMALL_POSTERIOR_NUMERIC_UNBLINDING",
+  "primary_scope": "Flat-LambdaCDM H0 public posterior output dependence only.",
+  "headline_endpoints": [
+    "H0_spectral_combined_gw170817.json",
+    "H0_dark_combined_gw170817.json"
+  ],
+  "bright_reference": "GW170817_H0_posterior.json",
+  "large_whitelist_count": 10,
+  "large_whitelist_total_bytes": 361225492,
+  "comparison_graph": [
+    {
+      "id": "C01",
+      "dimension": "PIPELINE",
+      "a": "gwcosmo_fullpop_spectral.json",
+      "b": "icarogw_fullpop_spectral.json",
+      "interpretation": "Same FullPop spectral LambdaCDM frame; pipeline output dependence."
+    },
+    {
+      "id": "C02",
+      "dimension": "ROUTE",
+      "a": "gwcosmo_fullpop_spectral.json",
+      "b": "gwcosmo_fullpop_des_lum.json",
+      "interpretation": "Spectral vs DES Y6 luminosity-weighted dark-siren route within gwcosmo FullPop."
+    },
+    {
+      "id": "C03",
+      "dimension": "CATALOG",
+      "a": "gwcosmo_fullpop_des_lum.json",
+      "b": "gwcosmo_fullpop_glade_lum.json",
+      "interpretation": "DES Y6 vs GLADE+ at FullPop/luminosity weighting."
+    },
+    {
+      "id": "C04",
+      "dimension": "WEIGHTING_DES",
+      "a": "gwcosmo_fullpop_des_lum.json",
+      "b": "gwcosmo_fullpop_des_uni.json",
+      "interpretation": "Luminosity vs uniform weighting within DES Y6 FullPop."
+    },
+    {
+      "id": "C05",
+      "dimension": "WEIGHTING_GLADE",
+      "a": "gwcosmo_fullpop_glade_lum.json",
+      "b": "gwcosmo_fullpop_glade_uni.json",
+      "interpretation": "Luminosity vs uniform weighting within GLADE+ FullPop."
+    },
+    {
+      "id": "C06",
+      "dimension": "POPULATION_MODEL",
+      "a": "gwcosmo_fullpop_spectral.json",
+      "b": "gwcosmo_bpl3p_spectral.json",
+      "interpretation": "FullPop vs BPL3P spectral, both 235-CBC frame per public README."
+    },
+    {
+      "id": "C07",
+      "dimension": "POPULATION_PLUS_FRAME_CONFOUNDED",
+      "a": "gwcosmo_fullpop_spectral.json",
+      "b": "gwcosmo_mltp_spectral.json",
+      "interpretation": "FullPop 235-CBC vs MLTP 231-BBH; do not attribute difference purely to population model."
+    },
+    {
+      "id": "C08",
+      "dimension": "IFAR_ROBUSTNESS_SPECTRAL",
+      "a": "gwcosmo_fullpop_spectral.json",
+      "b": "gwcosmo_ifar1_fullpop_spectral.json",
+      "interpretation": "Published IFAR validation comparison; descriptive only."
+    },
+    {
+      "id": "C09",
+      "dimension": "IFAR_ROBUSTNESS_DARK_DES",
+      "a": "gwcosmo_fullpop_des_lum.json",
+      "b": "gwcosmo_ifar1_fullpop_des_lum.json",
+      "interpretation": "Published IFAR validation comparison for DES/lum route; descriptive only."
+    },
+    {
+      "id": "C10",
+      "dimension": "FINAL_ROUTE_AFTER_BRIGHT_COMBINATION",
+      "a": "H0_spectral_combined_gw170817.json",
+      "b": "H0_dark_combined_gw170817.json",
+      "interpretation": "Official final spectral+GW170817 versus dark+GW170817 posterior products."
+    },
+    {
+      "id": "C11",
+      "dimension": "BRIGHT_TO_FINAL_SPECTRAL",
+      "a": "GW170817_H0_posterior.json",
+      "b": "H0_spectral_combined_gw170817.json",
+      "interpretation": "Bright-only versus final spectral+bright; combination effect, not a pure route effect."
+    },
+    {
+      "id": "C12",
+      "dimension": "BRIGHT_TO_FINAL_DARK",
+      "a": "GW170817_H0_posterior.json",
+      "b": "H0_dark_combined_gw170817.json",
+      "interpretation": "Bright-only versus final dark+bright; combination effect, not a pure route effect."
+    }
+  ],
+  "sample_rules": {
+    "use_samples_as_published": true,
+    "drop_nonfinite": true,
+    "minimum_finite_samples": 100,
+    "no_reweighting": true,
+    "no_resampling_for_primary_metrics": true,
+    "no_kde_for_primary_metrics": true
+  },
+  "metrics": {
+    "median": "numpy.median",
+    "q16_q84": "numpy.quantile(samples,[0.16,0.84],method='linear')",
+    "q05_q95": "numpy.quantile(samples,[0.05,0.95],method='linear')",
+    "width68": "q84-q16",
+    "width90": "q95-q05",
+    "delta_median": "median_b-median_a",
+    "width68_ratio": "width68_b/width68_a; undefined if denominator <=0",
+    "normalized_w1": "scipy.stats.wasserstein_distance(a,b) / scale; scale=(IQR_a+IQR_b)/2, fallback pooled std, floor 1e-12",
+    "central68_overlap": "max(0,min(q84_a,q84_b)-max(q16_a,q16_b))/min(width68_a,width68_b), undefined if denominator <=0"
+  },
+  "materiality_threshold": "OMITTED_NO_DOMAIN_JUSTIFIED_THRESHOLD",
+  "claim_boundary": {
+    "allowed": "Describe public posterior shifts/widths/W1/interval overlap for the frozen paired comparisons and provenance dimension.",
+    "forbidden": "Do not infer H0 truth, solve the Hubble tension, or causally assign a posterior difference beyond the explicitly paired public-output dimension.",
+    "confounded_C07": "C07 combines population-model and event-frame changes and must retain that label."
+  },
+  "stopping_rules": [
+    "If any whitelisted file checksum fails, HOLD before metric computation.",
+    "If a Bilby result cannot expose finite H0 samples under the frozen loader, mark PUBLIC_OUTPUT_LIMITED; do not reverse-engineer or substitute a different parameter.",
+    "If fewer than 100 finite H0 samples remain, mark INSUFFICIENT_PUBLIC_POSTERIOR and exclude from pair metrics.",
+    "Do not add modified-gravity Xi0/cM/Om0 or spin-variant files after seeing primary results; those remain inventory-only unless a new preregistered extension is created.",
+    "Do not add routes to rescue or amplify a weak dependence finding."
+  ]
+}
